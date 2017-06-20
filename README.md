@@ -37,7 +37,7 @@ Enable the facade by editing config/app.php:
 ```php
     'aliases' => [
         ...
-        'Slack' => Bluora\LaravelSlackApi\Facade::class,
+        'SlackApi' => Bluora\LaravelSlackApi\Facade::class,
         ...
     ];
 ```
