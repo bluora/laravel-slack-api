@@ -17,6 +17,24 @@ class UsersAdminInvite extends UsersAdminInvitePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the email.
+     *
+     * @param ApiClient $client
+     */
+    public function email($email = false)
+    {
+        if ($email === false) {
+            return $this->getEmail();
+        }
+
+        $this->setEmail($email);
+
+        return $this;
     }
 
     /**

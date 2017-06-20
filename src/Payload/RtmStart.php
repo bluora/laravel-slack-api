@@ -17,6 +17,8 @@ class RtmStart extends RtmStartPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

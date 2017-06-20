@@ -17,6 +17,8 @@ class SearchMessages extends SearchMessagesPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

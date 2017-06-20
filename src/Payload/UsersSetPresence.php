@@ -17,6 +17,24 @@ class UsersSetPresence extends UsersSetPresencePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the presence.
+     *
+     * @param ApiClient $client
+     */
+    public function presence($presence = false)
+    {
+        if ($presence === false) {
+            return $this->getPresence();
+        }
+
+        $this->setPresence($presence);
+
+        return $this;
     }
 
     /**

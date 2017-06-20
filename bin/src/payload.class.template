@@ -17,8 +17,10 @@ class {$class_name} extends {$class_name}{$class_type}
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
-    }
 
+        return $this;
+    }
+{$class_methods}
     /**
      * Send.
      *

@@ -17,6 +17,24 @@ class ImClose extends ImClosePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the im id.
+     *
+     * @param ApiClient $client
+     */
+    public function imId($imId = false)
+    {
+        if ($imId === false) {
+            return $this->getImId();
+        }
+
+        $this->setImId($imId);
+
+        return $this;
     }
 
     /**

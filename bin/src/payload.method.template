@@ -1,0 +1,16 @@
+
+    /**
+     * Get or set the {$text_method_name}.
+     *
+     * @param ApiClient $client
+     */
+    public function {$new_method_name}({$method_argument} = false)
+    {
+        if ({$method_argument} === false) {
+            return $this->get{$method_name}();
+        }
+
+        $this->set{$method_name}({$method_argument});
+
+        return $this;
+    }

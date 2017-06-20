@@ -17,6 +17,24 @@ class GroupsLeave extends GroupsLeavePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the group id.
+     *
+     * @param ApiClient $client
+     */
+    public function groupId($groupId = false)
+    {
+        if ($groupId === false) {
+            return $this->getGroupId();
+        }
+
+        $this->setGroupId($groupId);
+
+        return $this;
     }
 
     /**

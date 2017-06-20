@@ -17,6 +17,8 @@ class TeamInfo extends TeamInfoPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

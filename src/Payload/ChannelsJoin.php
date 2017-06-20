@@ -17,6 +17,24 @@ class ChannelsJoin extends ChannelsJoinPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the name.
+     *
+     * @param ApiClient $client
+     */
+    public function name($name = false)
+    {
+        if ($name === false) {
+            return $this->getName();
+        }
+
+        $this->setName($name);
+
+        return $this;
     }
 
     /**

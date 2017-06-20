@@ -17,6 +17,8 @@ class SearchAll extends SearchAllPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

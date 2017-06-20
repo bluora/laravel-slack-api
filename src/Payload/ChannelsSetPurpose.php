@@ -17,6 +17,40 @@ class ChannelsSetPurpose extends ChannelsSetPurposePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the channel id.
+     *
+     * @param ApiClient $client
+     */
+    public function channelId($channelId = false)
+    {
+        if ($channelId === false) {
+            return $this->getChannelId();
+        }
+
+        $this->setChannelId($channelId);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the purpose.
+     *
+     * @param ApiClient $client
+     */
+    public function purpose($purpose = false)
+    {
+        if ($purpose === false) {
+            return $this->getPurpose();
+        }
+
+        $this->setPurpose($purpose);
+
+        return $this;
     }
 
     /**

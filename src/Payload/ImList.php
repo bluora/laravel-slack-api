@@ -17,6 +17,24 @@ class ImList extends ImListPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
+    }
+
+    /**
+     * Get or set the exclude archived.
+     *
+     * @param ApiClient $client
+     */
+    public function excludeArchived($excludeArchived = false)
+    {
+        if ($excludeArchived === false) {
+            return $this->getExcludeArchived();
+        }
+
+        $this->setExcludeArchived($excludeArchived);
+
+        return $this;
     }
 
     /**

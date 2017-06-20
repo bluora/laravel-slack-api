@@ -17,6 +17,8 @@ class UsersSetActive extends UsersSetActivePayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

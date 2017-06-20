@@ -17,6 +17,8 @@ class SearchFiles extends SearchFilesPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**

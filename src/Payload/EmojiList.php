@@ -17,6 +17,8 @@ class EmojiList extends EmojiListPayload
     public function setClient(ApiClient &$client)
     {
         $this->client($client);
+
+        return $this;
     }
 
     /**
