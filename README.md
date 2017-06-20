@@ -11,7 +11,7 @@ Provides [Slack](https://github.com/cleentfaar/slack) for Laravel.
 
 [![Latest Stable Version](https://poser.pugx.org/bluora/laravel-slack-api/v/stable.svg)](https://packagist.org/packages/bluora/laravel-slack) [![Total Downloads](https://poser.pugx.org/bluora/laravel-slack-api/downloads.svg)](https://packagist.org/packages/bluora/laravel-slack) [![Latest Unstable Version](https://poser.pugx.org/bluora/laravel-slack-api/v/unstable.svg)](https://packagist.org/packages/bluora/laravel-slack) [![Built for Laravel](https://img.shields.io/badge/Built_for-Laravel-green.svg)](https://laravel.com/) [![License](https://poser.pugx.org/bluora/laravel-slack-api/license.svg)](https://packagist.org/packages/bluora/laravel-slack)
 
-[![StyleCI](https://styleci.io/repos/x/shield?branch=master)](https://styleci.io/repos/x) [![Issue Count](https://codeclimate.com/github/bluora/laravel-slack-api/badges/issue_count.svg)](https://codeclimate.com/github/bluora/laravel-slack) [![Code Climate](https://codeclimate.com/github/bluora/laravel-slack-api/badges/gpa.svg)](https://codeclimate.com/github/bluora/laravel-slack) 
+[![StyleCI](https://styleci.io/repos/94854520/shield?branch=master)](https://styleci.io/repos/94854520) [![Issue Count](https://codeclimate.com/github/bluora/laravel-slack-api/badges/issue_count.svg)](https://codeclimate.com/github/bluora/laravel-slack) [![Code Climate](https://codeclimate.com/github/bluora/laravel-slack-api/badges/gpa.svg)](https://codeclimate.com/github/bluora/laravel-slack) 
 
 This package has been developed by H&H|Digital, an Australian botique developer. Visit us at [hnh.digital](http://hnh.digital).
 
