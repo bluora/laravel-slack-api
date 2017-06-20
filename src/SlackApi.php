@@ -4,7 +4,7 @@ namespace Bluora\LaravelSlackApi;
 
 use CL\Slack\Transport\ApiClient;
 
-class Slack
+class SlackApi
 {
     protected $client;
     protected $token;
