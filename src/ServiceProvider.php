@@ -40,7 +40,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'slack-api');
 
         $this->app->singleton('bluora.slackapi', function ($app) {
-            return new Slack();
+            return new Slack($app['config']->get('slack-api.access_token'));
         });
 
         $this->app->bind('Bluora\LaravelSlackApi\Slack', 'bluora.slackapi');
