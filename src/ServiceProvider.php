@@ -2,8 +2,6 @@
 
 namespace Bluora\LaravelSlackApi;
 
-use GuzzleHttp\Client as Guzzle;
-
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
