@@ -7,7 +7,7 @@
  |_____/|_|\__,_|\___|_|\_\ API |_| \___/|_|    |______\__,_|_|  \__,_| \_/ \___|_|
                                                                                
 ```
-Provides [Slack](https://github.com/cleentfaar/slack) for Laravel.
+Provides [Slack](https://github.com/bluora/php-slack-api) for Laravel.
 
 [![Latest Stable Version](https://poser.pugx.org/bluora/laravel-slack-api/v/stable.svg)](https://packagist.org/packages/bluora/laravel-slack-api) [![Total Downloads](https://poser.pugx.org/bluora/laravel-slack-api/downloads.svg)](https://packagist.org/packages/bluora/laravel-slack-api) [![Latest Unstable Version](https://poser.pugx.org/bluora/laravel-slack-api/v/unstable.svg)](https://packagist.org/packages/bluora/laravel-slack-api) [![Built for Laravel](https://img.shields.io/badge/Built_for-Laravel-green.svg)](https://laravel.com/) [![License](https://poser.pugx.org/bluora/laravel-slack-api/license.svg)](https://packagist.org/packages/bluora/laravel-slack-api)
 
