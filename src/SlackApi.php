@@ -98,10 +98,16 @@ class SlackApi
      */
     public function __call($method_name, $arguments)
     {
-        $class_name = 'Bluora\\LaravelSlackApi\\Payload\\'.ucfirst($method_name).'Payload';
+        foreach (['Payload', 'Model'] as $class_type) {
+            $class_name = 'Bluora\\LaravelSlackApi\\'.$class_type.'\\'.ucfirst($method_name);
 
-        if (class_exists($class_name)) {
-            return (new $class_name());
+            if ($class_type == 'Payload') {
+                $class_name .= $class_type;
+            }
+
+            if (class_exists($class_name)) {
+                return (new $class_name());
+            }
         }
 
         throw new \Exception('That payload does not exist.');
