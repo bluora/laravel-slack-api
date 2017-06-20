@@ -1,0 +1,9 @@
+<?php
+
+namespace Bluora\LaravelSlackApi\{$class_type};
+
+{$class_aliases}
+class {$class_name} extends Original{$class_name}
+{
+{$class_contents}
+}

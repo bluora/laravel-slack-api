@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\GroupWithStateModel;
+use CL\Slack\Payload\GroupWithState as OriginalGroupWithState;
+use CL\Slack\Payload\GroupWithStateResponse;
+use CL\Slack\Transport\ApiClient;
 
-class GroupWithState extends GroupWithStateModel
+class GroupWithState extends OriginalGroupWithState
 {
+
 }

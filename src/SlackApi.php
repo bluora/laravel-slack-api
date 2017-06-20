@@ -60,13 +60,51 @@ class SlackApi
         return $this;
     }
 
-    public function __get($method_name, $arguments)
+    /**
+     * Add request closure.
+     * 
+     * @param Closure $closure
+     *
+     * @return void
+     */
+    public function addRequestListener($closure)
     {
-        $class_name = 'Bluora\\LaravelSlackApi\\Payload\\'.$method_name;
+        $this->client->addRequestListener($closure);
+
+        return $this;
+    }
+
+    /**
+     * Add response closure
+     * 
+     * @param Closure $closure
+     *
+     * @return void
+     */
+    public function addResponseListener($closure)
+    {
+        $this->client->addResponseListener($closure);
+
+        return $this;
+    }
+
+    /**
+     * Capture all calls.
+     *
+     * @param  [type] $method_name
+     * @param  [type] $arguments
+     *
+     * @return mixed
+     */
+    public function __call($method_name, $arguments)
+    {
+        $class_name = 'Bluora\\LaravelSlackApi\\Payload\\'.ucfirst($method_name).'Payload';
 
         if (class_exists($class_name)) {
-            return new $class_name($this->client);
+            return (new $class_name());
         }
+
+        throw new \Exception('That payload does not exist.');
     }
 
     /**

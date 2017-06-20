@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\StarredItemModel;
+use CL\Slack\Payload\StarredItem as OriginalStarredItem;
+use CL\Slack\Payload\StarredItemResponse;
+use CL\Slack\Transport\ApiClient;
 
-class StarredItem extends StarredItemModel
+class StarredItem extends OriginalStarredItem
 {
+
 }

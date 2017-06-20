@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\GroupModel;
+use CL\Slack\Payload\Group as OriginalGroup;
+use CL\Slack\Payload\GroupResponse;
+use CL\Slack\Transport\ApiClient;
 
-class Group extends GroupModel
+class Group extends OriginalGroup
 {
+
 }

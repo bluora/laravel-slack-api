@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\SimpleChannelModel;
+use CL\Slack\Payload\SimpleChannel as OriginalSimpleChannel;
+use CL\Slack\Payload\SimpleChannelResponse;
+use CL\Slack\Transport\ApiClient;
 
-class SimpleChannel extends SimpleChannelModel
+class SimpleChannel extends OriginalSimpleChannel
 {
+
 }

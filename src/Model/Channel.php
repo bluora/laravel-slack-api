@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\ChannelModel;
+use CL\Slack\Payload\Channel as OriginalChannel;
+use CL\Slack\Payload\ChannelResponse;
+use CL\Slack\Transport\ApiClient;
 
-class Channel extends ChannelModel
+class Channel extends OriginalChannel
 {
+
 }

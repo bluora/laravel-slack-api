@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\TeamModel;
+use CL\Slack\Payload\Team as OriginalTeam;
+use CL\Slack\Payload\TeamResponse;
+use CL\Slack\Transport\ApiClient;
 
-class Team extends TeamModel
+class Team extends OriginalTeam
 {
+
 }

@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\MessageResultModel;
+use CL\Slack\Payload\MessageResult as OriginalMessageResult;
+use CL\Slack\Payload\MessageResultResponse;
+use CL\Slack\Transport\ApiClient;
 
-class MessageResult extends MessageResultModel
+class MessageResult extends OriginalMessageResult
 {
+
 }

@@ -1,25 +1,3 @@
-<?php
-
-namespace Bluora\LaravelSlackApi\{$class_type};
-
-use CL\Slack\{$class_type}\{$class_name}{$class_type};
-use CL\Slack\Transport\ApiClient;
-
-class {$class_name} extends {$class_name}{$class_type}
-{
-    protected $client;
-
-    /**
-     * Set the client.
-     *
-     * @param ApiClient $client
-     */
-    public function setClient(ApiClient &$client)
-    {
-        $this->client($client);
-
-        return $this;
-    }
 {$class_methods}
     /**
      * Send.
@@ -28,6 +6,7 @@ class {$class_name} extends {$class_name}{$class_type}
      */
     public function send()
     {
-        return $this->client->send($this);
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
     }
-}

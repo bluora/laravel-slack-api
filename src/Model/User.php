@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\UserModel;
+use CL\Slack\Payload\User as OriginalUser;
+use CL\Slack\Payload\UserResponse;
+use CL\Slack\Transport\ApiClient;
 
-class User extends UserModel
+class User extends OriginalUser
 {
+
 }

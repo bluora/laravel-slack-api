@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\ImChannelModel;
+use CL\Slack\Payload\ImChannel as OriginalImChannel;
+use CL\Slack\Payload\ImChannelResponse;
+use CL\Slack\Transport\ApiClient;
 
-class ImChannel extends ImChannelModel
+class ImChannel extends OriginalImChannel
 {
+
 }

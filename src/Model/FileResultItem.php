@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\FileResultItemModel;
+use CL\Slack\Payload\FileResultItem as OriginalFileResultItem;
+use CL\Slack\Payload\FileResultItemResponse;
+use CL\Slack\Transport\ApiClient;
 
-class FileResultItem extends FileResultItemModel
+class FileResultItem extends OriginalFileResultItem
 {
+
 }

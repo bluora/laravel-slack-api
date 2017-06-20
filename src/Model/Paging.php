@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\PagingModel;
+use CL\Slack\Payload\Paging as OriginalPaging;
+use CL\Slack\Payload\PagingResponse;
+use CL\Slack\Transport\ApiClient;
 
-class Paging extends PagingModel
+class Paging extends OriginalPaging
 {
+
 }

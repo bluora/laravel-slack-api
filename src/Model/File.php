@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\FileModel;
+use CL\Slack\Payload\File as OriginalFile;
+use CL\Slack\Payload\FileResponse;
+use CL\Slack\Transport\ApiClient;
 
-class File extends FileModel
+class File extends OriginalFile
 {
+
 }

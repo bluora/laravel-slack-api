@@ -11,19 +11,18 @@ if (!file_exists($src_dir)) {
 
 $mode = fileperms(__DIR__.'/../src/');
 
-if (!file_exists(__DIR__.'/../src/Payload')) {
-    mkdir(__DIR__.'/../src/Payload', $mode, true);
-}
+exec('rm -rf '.__DIR__.'/../src/Payload');
+exec('rm -rf '.__DIR__.'/../src/Model');
 
-if (!file_exists(__DIR__.'/../src/Model')) {
-    mkdir(__DIR__.'/../src/Model', $mode, true);
-}
+mkdir(__DIR__.'/../src/Payload', $mode, true);
+mkdir(__DIR__.'/../src/Model', $mode, true);
 
 foreach (['Payload', 'Model'] as $class_type) {
     $working_path = $src_dir.'/'.$class_type;
     $files = scandir($working_path);
 
-    $class_template = file_get_contents(__DIR__.'/src/'.strtolower($class_type).'.class.template');
+    $class_template = file_get_contents(__DIR__.'/src/class.template');
+    $class_contents_template = file_get_contents(__DIR__.'/src/'.strtolower($class_type).'.class.template');
     $method_template = file_get_contents(__DIR__.'/src/'.strtolower($class_type).'.method.template');
 
     foreach ($files as $path) {
@@ -31,28 +30,38 @@ foreach (['Payload', 'Model'] as $class_type) {
             continue;
         }
 
-        if (stripos($path, 'Test') !== false || stripos($path, 'Abstract') !== false || stripos($path, 'Interface') !== false || stripos($path, 'PayloadResponse') !== false) {
+        if (stripos($path, 'Test') !== false || stripos($path, 'Abstract') !== false || stripos($path, 'Interface') !== false) {
             continue;
         }
 
+        $original_class_name = pathinfo($path, PATHINFO_FILENAME);
+        $class_aliases = "use CL\\Slack\\Payload\\$original_class_name as Original$original_class_name;\n";
         $class_methods = '';
-        $class_contents = file_get_contents($working_path.'/'.$path);
+        $class_contents = '';
 
-        $matches= [];
-        $methods = preg_match_all("/public function set(.*?)\(/im", $class_contents, $matches);
+        if (stripos($path, 'PayloadResponse') === false) {
 
-        foreach ($matches[1] as $method_name) {
-            $new_method_name = lcfirst($method_name);
-            $method_argument = '$'.$new_method_name;
-            $text_method_name = strtolower(implode(' ', preg_split('/(?=[A-Z])/', $new_method_name)));
+            $class_contents = file_get_contents($working_path.'/'.$path);
 
-            $class_methods .= str_replace(['{$method_name}', '{$method_argument}', '{$new_method_name}', '{$text_method_name}'], [$method_name, $method_argument, $new_method_name, $text_method_name], $method_template);
+            $matches= [];
+            $methods = preg_match_all("/public function set(.*?)\(/im", $class_contents, $matches);
+
+            foreach ($matches[1] as $method_name) {
+                $new_method_name = lcfirst($method_name);
+                $method_argument = '$'.$new_method_name;
+                $text_method_name = strtolower(implode(' ', preg_split('/(?=[A-Z])/', $new_method_name)));
+
+                $class_methods .= str_replace(['{$method_name}', '{$method_argument}', '{$new_method_name}', '{$text_method_name}'], [$method_name, $method_argument, $new_method_name, $text_method_name], $method_template);
+            }
+
+            $class_contents = str_replace(['{$class_type}', '{$class_name}', '{$class_methods}'], [$class_type, $original_class_name, $class_methods], $class_contents_template);
+
+            $class_aliases .= "use CL\\Slack\\Payload\\${original_class_name}Response;\n";
+            $class_aliases .= "use CL\\Slack\\Transport\\ApiClient;\n";
         }
 
-        $class_name = str_replace($class_type, '', pathinfo($path, PATHINFO_FILENAME));
+        $file_contents = str_replace(['{$class_aliases}', '{$class_type}', '{$class_name}', '{$class_contents}'], [$class_aliases, $class_type, $original_class_name, $class_contents], $class_template);
 
-        $file_contents = str_replace(['{$class_type}', '{$class_name}', '{$class_methods}'], [$class_type, $class_name, $class_methods], $class_template);
-
-        file_put_contents(__DIR__.'/../src/'.$class_type.'/'.$class_name.'.php', $file_contents);
+        file_put_contents(__DIR__.'/../src/'.$class_type.'/'.$original_class_name.'.php', $file_contents);
     }
 }

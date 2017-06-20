@@ -1,9 +1,12 @@
 <?php
 
-namespace Bluora\LaravelSlackApi;
+namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Model\AttachmentFieldModel;
+use CL\Slack\Payload\AttachmentField as OriginalAttachmentField;
+use CL\Slack\Payload\AttachmentFieldResponse;
+use CL\Slack\Transport\ApiClient;
 
-class AttachmentField extends AttachmentFieldModel
+class AttachmentField extends OriginalAttachmentField
 {
+
 }
