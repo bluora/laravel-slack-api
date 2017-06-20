@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersSetActivePayload as OriginalUsersSetActivePayload;
 use CL\Slack\Payload\UsersSetActivePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class UsersSetActivePayload extends OriginalUsersSetActivePayload
 {

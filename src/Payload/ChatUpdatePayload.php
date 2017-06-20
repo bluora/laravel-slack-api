@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatUpdatePayload as OriginalChatUpdatePayload;
 use CL\Slack\Payload\ChatUpdatePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChatUpdatePayload extends OriginalChatUpdatePayload
 {
@@ -12,7 +11,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {
@@ -28,7 +27,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the slack timestamp.
      *
-     * @param ApiClient $client
+     * @param mixed $slackTimestamp
      */
     public function slackTimestamp($slackTimestamp = false)
     {
@@ -44,7 +43,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the text.
      *
-     * @param ApiClient $client
+     * @param mixed $text
      */
     public function text($text = false)
     {
@@ -60,7 +59,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the message.
      *
-     * @param ApiClient $client
+     * @param mixed $message
      */
     public function message($message = false)
     {
@@ -76,7 +75,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the parse.
      *
-     * @param ApiClient $client
+     * @param mixed $parse
      */
     public function parse($parse = false)
     {
@@ -92,7 +91,7 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     /**
      * Get or set the link names.
      *
-     * @param ApiClient $client
+     * @param mixed $linkNames
      */
     public function linkNames($linkNames = false)
     {

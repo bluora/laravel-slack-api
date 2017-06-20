@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImMarkPayload as OriginalImMarkPayload;
 use CL\Slack\Payload\ImMarkPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ImMarkPayload extends OriginalImMarkPayload
 {
@@ -12,7 +11,7 @@ class ImMarkPayload extends OriginalImMarkPayload
     /**
      * Get or set the im id.
      *
-     * @param ApiClient $client
+     * @param mixed $imId
      */
     public function imId($imId = false)
     {
@@ -28,7 +27,7 @@ class ImMarkPayload extends OriginalImMarkPayload
     /**
      * Get or set the slack timestamp.
      *
-     * @param ApiClient $client
+     * @param mixed $slackTimestamp
      */
     public function slackTimestamp($slackTimestamp = false)
     {

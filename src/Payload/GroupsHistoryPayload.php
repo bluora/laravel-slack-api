@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsHistoryPayload as OriginalGroupsHistoryPayload;
 use CL\Slack\Payload\GroupsHistoryPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
 {
@@ -12,7 +11,7 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
     /**
      * Get or set the group id.
      *
-     * @param ApiClient $client
+     * @param mixed $groupId
      */
     public function groupId($groupId = false)
     {
@@ -28,7 +27,7 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
     /**
      * Get or set the latest.
      *
-     * @param ApiClient $client
+     * @param mixed $latest
      */
     public function latest($latest = false)
     {
@@ -44,7 +43,7 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
     /**
      * Get or set the oldest.
      *
-     * @param ApiClient $client
+     * @param mixed $oldest
      */
     public function oldest($oldest = false)
     {
@@ -60,7 +59,7 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
     /**
      * Get or set the count.
      *
-     * @param ApiClient $client
+     * @param mixed $count
      */
     public function count($count = false)
     {
@@ -76,7 +75,7 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
     /**
      * Get or set the inclusive.
      *
-     * @param ApiClient $client
+     * @param mixed $inclusive
      */
     public function inclusive($inclusive = false)
     {

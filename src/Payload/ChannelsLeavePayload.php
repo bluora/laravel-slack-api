@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsLeavePayload as OriginalChannelsLeavePayload;
 use CL\Slack\Payload\ChannelsLeavePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChannelsLeavePayload extends OriginalChannelsLeavePayload
 {
@@ -12,7 +11,7 @@ class ChannelsLeavePayload extends OriginalChannelsLeavePayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {

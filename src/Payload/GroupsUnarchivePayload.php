@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsUnarchivePayload as OriginalGroupsUnarchivePayload;
 use CL\Slack\Payload\GroupsUnarchivePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsUnarchivePayload extends OriginalGroupsUnarchivePayload
 {
@@ -12,7 +11,7 @@ class GroupsUnarchivePayload extends OriginalGroupsUnarchivePayload
     /**
      * Get or set the group id.
      *
-     * @param ApiClient $client
+     * @param mixed $groupId
      */
     public function groupId($groupId = false)
     {

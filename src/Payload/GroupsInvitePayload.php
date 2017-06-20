@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsInvitePayload as OriginalGroupsInvitePayload;
 use CL\Slack\Payload\GroupsInvitePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsInvitePayload extends OriginalGroupsInvitePayload
 {
@@ -12,7 +11,7 @@ class GroupsInvitePayload extends OriginalGroupsInvitePayload
     /**
      * Get or set the group id.
      *
-     * @param ApiClient $client
+     * @param mixed $groupId
      */
     public function groupId($groupId = false)
     {
@@ -28,7 +27,7 @@ class GroupsInvitePayload extends OriginalGroupsInvitePayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {

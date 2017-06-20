@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesInfoPayload as OriginalFilesInfoPayload;
 use CL\Slack\Payload\FilesInfoPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class FilesInfoPayload extends OriginalFilesInfoPayload
 {
@@ -12,7 +11,7 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
     /**
      * Get or set the count.
      *
-     * @param ApiClient $client
+     * @param mixed $count
      */
     public function count($count = false)
     {
@@ -28,7 +27,7 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
     /**
      * Get or set the file id.
      *
-     * @param ApiClient $client
+     * @param mixed $fileId
      */
     public function fileId($fileId = false)
     {
@@ -44,7 +43,7 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
     /**
      * Get or set the page.
      *
-     * @param ApiClient $client
+     * @param mixed $page
      */
     public function page($page = false)
     {

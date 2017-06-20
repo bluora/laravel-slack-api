@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsSetTopicPayload as OriginalChannelsSetTopicPayload;
 use CL\Slack\Payload\ChannelsSetTopicPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChannelsSetTopicPayload extends OriginalChannelsSetTopicPayload
 {
@@ -12,7 +11,7 @@ class ChannelsSetTopicPayload extends OriginalChannelsSetTopicPayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {
@@ -28,7 +27,7 @@ class ChannelsSetTopicPayload extends OriginalChannelsSetTopicPayload
     /**
      * Get or set the topic.
      *
-     * @param ApiClient $client
+     * @param mixed $topic
      */
     public function topic($topic = false)
     {

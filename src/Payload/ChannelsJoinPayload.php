@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsJoinPayload as OriginalChannelsJoinPayload;
 use CL\Slack\Payload\ChannelsJoinPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChannelsJoinPayload extends OriginalChannelsJoinPayload
 {
@@ -12,7 +11,7 @@ class ChannelsJoinPayload extends OriginalChannelsJoinPayload
     /**
      * Get or set the name.
      *
-     * @param ApiClient $client
+     * @param mixed $name
      */
     public function name($name = false)
     {

@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\EmojiListPayload as OriginalEmojiListPayload;
 use CL\Slack\Payload\EmojiListPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class EmojiListPayload extends OriginalEmojiListPayload
 {

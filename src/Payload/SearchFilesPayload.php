@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\SearchFilesPayload as OriginalSearchFilesPayload;
 use CL\Slack\Payload\SearchFilesPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class SearchFilesPayload extends OriginalSearchFilesPayload
 {

@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsCreatePayload as OriginalGroupsCreatePayload;
 use CL\Slack\Payload\GroupsCreatePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsCreatePayload extends OriginalGroupsCreatePayload
 {
@@ -12,7 +11,7 @@ class GroupsCreatePayload extends OriginalGroupsCreatePayload
     /**
      * Get or set the name.
      *
-     * @param ApiClient $client
+     * @param mixed $name
      */
     public function name($name = false)
     {

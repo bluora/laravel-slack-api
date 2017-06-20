@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsSetPurposePayload as OriginalGroupsSetPurposePayload;
 use CL\Slack\Payload\GroupsSetPurposePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
 {
@@ -12,7 +11,7 @@ class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
     /**
      * Get or set the group id.
      *
-     * @param ApiClient $client
+     * @param mixed $groupId
      */
     public function groupId($groupId = false)
     {
@@ -28,7 +27,7 @@ class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
     /**
      * Get or set the purpose.
      *
-     * @param ApiClient $client
+     * @param mixed $purpose
      */
     public function purpose($purpose = false)
     {

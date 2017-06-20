@@ -2,10 +2,10 @@
 
 namespace Bluora\LaravelSlackApi\Payload;
 
-use CL\Slack\Payload\ChannelsSetPurposePayload as OriginalChannelsSetPurposePayload;
-use CL\Slack\Payload\ChannelsSetPurposePayloadResponse;
+use CL\Slack\Payload\ReactionsPayload as OriginalReactionsPayload;
+use CL\Slack\Payload\ReactionsPayloadResponse;
 
-class ChannelsSetPurposePayload extends OriginalChannelsSetPurposePayload
+class ReactionsPayload extends OriginalReactionsPayload
 {
 
     /**
@@ -25,17 +25,17 @@ class ChannelsSetPurposePayload extends OriginalChannelsSetPurposePayload
     }
 
     /**
-     * Get or set the purpose.
+     * Get or set the timestamp.
      *
-     * @param mixed $purpose
+     * @param mixed $timestamp
      */
-    public function purpose($purpose = false)
+    public function timestamp($timestamp = false)
     {
-        if ($purpose === false) {
-            return $this->getPurpose();
+        if ($timestamp === false) {
+            return $this->getTimestamp();
         }
 
-        $this->setPurpose($purpose);
+        $this->setTimestamp($timestamp);
 
         return $this;
     }

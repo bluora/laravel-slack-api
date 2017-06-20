@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesListPayload as OriginalFilesListPayload;
 use CL\Slack\Payload\FilesListPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class FilesListPayload extends OriginalFilesListPayload
 {
@@ -12,7 +11,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {
@@ -28,7 +27,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the timestamp from.
      *
-     * @param ApiClient $client
+     * @param mixed $timestampFrom
      */
     public function timestampFrom($timestampFrom = false)
     {
@@ -44,7 +43,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the timestamp to.
      *
-     * @param ApiClient $client
+     * @param mixed $timestampTo
      */
     public function timestampTo($timestampTo = false)
     {
@@ -60,7 +59,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the count.
      *
-     * @param ApiClient $client
+     * @param mixed $count
      */
     public function count($count = false)
     {
@@ -76,7 +75,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the page.
      *
-     * @param ApiClient $client
+     * @param mixed $page
      */
     public function page($page = false)
     {
@@ -92,7 +91,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the types.
      *
-     * @param ApiClient $client
+     * @param mixed $types
      */
     public function types($types = false)
     {
@@ -108,7 +107,7 @@ class FilesListPayload extends OriginalFilesListPayload
     /**
      * Get or set the types from string.
      *
-     * @param ApiClient $client
+     * @param mixed $typesFromString
      */
     public function typesFromString($typesFromString = false)
     {

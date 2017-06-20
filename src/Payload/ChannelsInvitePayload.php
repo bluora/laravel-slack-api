@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsInvitePayload as OriginalChannelsInvitePayload;
 use CL\Slack\Payload\ChannelsInvitePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChannelsInvitePayload extends OriginalChannelsInvitePayload
 {
@@ -12,7 +11,7 @@ class ChannelsInvitePayload extends OriginalChannelsInvitePayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {
@@ -28,7 +27,7 @@ class ChannelsInvitePayload extends OriginalChannelsInvitePayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {

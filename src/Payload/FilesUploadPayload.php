@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesUploadPayload as OriginalFilesUploadPayload;
 use CL\Slack\Payload\FilesUploadPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class FilesUploadPayload extends OriginalFilesUploadPayload
 {
@@ -12,7 +11,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the file.
      *
-     * @param ApiClient $client
+     * @param mixed $file
      */
     public function file($file = false)
     {
@@ -28,7 +27,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the filename.
      *
-     * @param ApiClient $client
+     * @param mixed $filename
      */
     public function filename($filename = false)
     {
@@ -44,7 +43,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the file type.
      *
-     * @param ApiClient $client
+     * @param mixed $fileType
      */
     public function fileType($fileType = false)
     {
@@ -60,7 +59,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the title.
      *
-     * @param ApiClient $client
+     * @param mixed $title
      */
     public function title($title = false)
     {
@@ -76,7 +75,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the content.
      *
-     * @param ApiClient $client
+     * @param mixed $content
      */
     public function content($content = false)
     {
@@ -92,7 +91,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the channels.
      *
-     * @param ApiClient $client
+     * @param mixed $channels
      */
     public function channels($channels = false)
     {
@@ -108,7 +107,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the channels from string.
      *
-     * @param ApiClient $client
+     * @param mixed $channelsFromString
      */
     public function channelsFromString($channelsFromString = false)
     {
@@ -124,7 +123,7 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
     /**
      * Get or set the initial comment.
      *
-     * @param ApiClient $client
+     * @param mixed $initialComment
      */
     public function initialComment($initialComment = false)
     {

@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\OauthAccessPayload as OriginalOauthAccessPayload;
 use CL\Slack\Payload\OauthAccessPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class OauthAccessPayload extends OriginalOauthAccessPayload
 {
@@ -12,7 +11,7 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
     /**
      * Get or set the client id.
      *
-     * @param ApiClient $client
+     * @param mixed $clientId
      */
     public function clientId($clientId = false)
     {
@@ -28,7 +27,7 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
     /**
      * Get or set the client secret.
      *
-     * @param ApiClient $client
+     * @param mixed $clientSecret
      */
     public function clientSecret($clientSecret = false)
     {
@@ -44,7 +43,7 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
     /**
      * Get or set the code.
      *
-     * @param ApiClient $client
+     * @param mixed $code
      */
     public function code($code = false)
     {
@@ -60,7 +59,7 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
     /**
      * Get or set the redirect uri.
      *
-     * @param ApiClient $client
+     * @param mixed $redirectUri
      */
     public function redirectUri($redirectUri = false)
     {

@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsMarkPayload as OriginalGroupsMarkPayload;
 use CL\Slack\Payload\GroupsMarkPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsMarkPayload extends OriginalGroupsMarkPayload
 {
@@ -12,7 +11,7 @@ class GroupsMarkPayload extends OriginalGroupsMarkPayload
     /**
      * Get or set the group id.
      *
-     * @param ApiClient $client
+     * @param mixed $groupId
      */
     public function groupId($groupId = false)
     {
@@ -28,7 +27,7 @@ class GroupsMarkPayload extends OriginalGroupsMarkPayload
     /**
      * Get or set the slack timestamp.
      *
-     * @param ApiClient $client
+     * @param mixed $slackTimestamp
      */
     public function slackTimestamp($slackTimestamp = false)
     {

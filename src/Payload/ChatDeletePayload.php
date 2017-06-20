@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatDeletePayload as OriginalChatDeletePayload;
 use CL\Slack\Payload\ChatDeletePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChatDeletePayload extends OriginalChatDeletePayload
 {
@@ -12,7 +11,7 @@ class ChatDeletePayload extends OriginalChatDeletePayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {
@@ -28,7 +27,7 @@ class ChatDeletePayload extends OriginalChatDeletePayload
     /**
      * Get or set the slack timestamp.
      *
-     * @param ApiClient $client
+     * @param mixed $slackTimestamp
      */
     public function slackTimestamp($slackTimestamp = false)
     {

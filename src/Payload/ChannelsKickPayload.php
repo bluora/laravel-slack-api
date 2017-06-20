@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsKickPayload as OriginalChannelsKickPayload;
 use CL\Slack\Payload\ChannelsKickPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChannelsKickPayload extends OriginalChannelsKickPayload
 {
@@ -12,7 +11,7 @@ class ChannelsKickPayload extends OriginalChannelsKickPayload
     /**
      * Get or set the channel id.
      *
-     * @param ApiClient $client
+     * @param mixed $channelId
      */
     public function channelId($channelId = false)
     {
@@ -28,7 +27,7 @@ class ChannelsKickPayload extends OriginalChannelsKickPayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {

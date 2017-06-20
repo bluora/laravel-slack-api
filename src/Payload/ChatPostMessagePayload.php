@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatPostMessagePayload as OriginalChatPostMessagePayload;
 use CL\Slack\Payload\ChatPostMessagePayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ChatPostMessagePayload extends OriginalChatPostMessagePayload
 {
@@ -12,7 +11,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the channel.
      *
-     * @param ApiClient $client
+     * @param mixed $channel
      */
     public function channel($channel = false)
     {
@@ -28,7 +27,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the text.
      *
-     * @param ApiClient $client
+     * @param mixed $text
      */
     public function text($text = false)
     {
@@ -44,7 +43,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the message.
      *
-     * @param ApiClient $client
+     * @param mixed $message
      */
     public function message($message = false)
     {
@@ -60,7 +59,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the username.
      *
-     * @param ApiClient $client
+     * @param mixed $username
      */
     public function username($username = false)
     {
@@ -76,7 +75,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the as user.
      *
-     * @param ApiClient $client
+     * @param mixed $asUser
      */
     public function asUser($asUser = false)
     {
@@ -92,7 +91,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the parse.
      *
-     * @param ApiClient $client
+     * @param mixed $parse
      */
     public function parse($parse = false)
     {
@@ -108,7 +107,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the icon emoji.
      *
-     * @param ApiClient $client
+     * @param mixed $iconEmoji
      */
     public function iconEmoji($iconEmoji = false)
     {
@@ -124,7 +123,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the icon url.
      *
-     * @param ApiClient $client
+     * @param mixed $iconUrl
      */
     public function iconUrl($iconUrl = false)
     {
@@ -140,7 +139,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the unfurl links.
      *
-     * @param ApiClient $client
+     * @param mixed $unfurlLinks
      */
     public function unfurlLinks($unfurlLinks = false)
     {
@@ -156,7 +155,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the unfurl media.
      *
-     * @param ApiClient $client
+     * @param mixed $unfurlMedia
      */
     public function unfurlMedia($unfurlMedia = false)
     {
@@ -172,7 +171,7 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     /**
      * Get or set the link names.
      *
-     * @param ApiClient $client
+     * @param mixed $linkNames
      */
     public function linkNames($linkNames = false)
     {

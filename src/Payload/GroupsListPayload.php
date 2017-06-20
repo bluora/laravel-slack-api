@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsListPayload as OriginalGroupsListPayload;
 use CL\Slack\Payload\GroupsListPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class GroupsListPayload extends OriginalGroupsListPayload
 {
@@ -12,7 +11,7 @@ class GroupsListPayload extends OriginalGroupsListPayload
     /**
      * Get or set the exclude archived.
      *
-     * @param ApiClient $client
+     * @param mixed $excludeArchived
      */
     public function excludeArchived($excludeArchived = false)
     {

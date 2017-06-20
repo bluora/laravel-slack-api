@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImOpenPayload as OriginalImOpenPayload;
 use CL\Slack\Payload\ImOpenPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class ImOpenPayload extends OriginalImOpenPayload
 {
@@ -12,7 +11,7 @@ class ImOpenPayload extends OriginalImOpenPayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {

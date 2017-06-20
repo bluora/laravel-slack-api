@@ -4,7 +4,6 @@ namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\StarsListPayload as OriginalStarsListPayload;
 use CL\Slack\Payload\StarsListPayloadResponse;
-use CL\Slack\Transport\ApiClient;
 
 class StarsListPayload extends OriginalStarsListPayload
 {
@@ -12,7 +11,7 @@ class StarsListPayload extends OriginalStarsListPayload
     /**
      * Get or set the user id.
      *
-     * @param ApiClient $client
+     * @param mixed $userId
      */
     public function userId($userId = false)
     {
@@ -28,7 +27,7 @@ class StarsListPayload extends OriginalStarsListPayload
     /**
      * Get or set the count.
      *
-     * @param ApiClient $client
+     * @param mixed $count
      */
     public function count($count = false)
     {
@@ -44,7 +43,7 @@ class StarsListPayload extends OriginalStarsListPayload
     /**
      * Get or set the page.
      *
-     * @param ApiClient $client
+     * @param mixed $page
      */
     public function page($page = false)
     {
