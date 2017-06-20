@@ -2,7 +2,7 @@
     /**
      * Get or set the {$text_method_name}.
      *
-     * @param ApiClient $client
+     * @param mixed {$method_argument}
      */
     public function {$new_method_name}({$method_argument} = false)
     {
