@@ -6,5 +6,4 @@ use CL\Slack\Model\ChannelModel;
 
 class Channel extends ChannelModel
 {
-    
 }

@@ -6,5 +6,4 @@ use CL\Slack\Model\GroupModel;
 
 class Group extends GroupModel
 {
-    
 }

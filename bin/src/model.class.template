@@ -6,5 +6,4 @@ use CL\Slack\{$class_type}\{$class_name}{$class_type};
 
 class {$class_name} extends {$class_name}{$class_type}
 {
-    
 }

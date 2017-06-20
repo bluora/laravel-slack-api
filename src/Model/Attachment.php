@@ -6,5 +6,4 @@ use CL\Slack\Model\AttachmentModel;
 
 class Attachment extends AttachmentModel
 {
-    
 }

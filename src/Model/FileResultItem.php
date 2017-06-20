@@ -6,5 +6,4 @@ use CL\Slack\Model\FileResultItemModel;
 
 class FileResultItem extends FileResultItemModel
 {
-    
 }

@@ -6,5 +6,4 @@ use CL\Slack\Model\GroupWithStateModel;
 
 class GroupWithState extends GroupWithStateModel
 {
-    
 }

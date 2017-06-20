@@ -6,5 +6,4 @@ use CL\Slack\Model\UserProfileModel;
 
 class UserProfile extends UserProfileModel
 {
-    
 }

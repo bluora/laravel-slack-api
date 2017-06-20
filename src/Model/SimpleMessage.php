@@ -6,5 +6,4 @@ use CL\Slack\Model\SimpleMessageModel;
 
 class SimpleMessage extends SimpleMessageModel
 {
-    
 }
