@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\File as OriginalFile;
-use CL\Slack\Payload\FileResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\File as OriginalFile;
 
 class File extends OriginalFile
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\SimpleChannel as OriginalSimpleChannel;
-use CL\Slack\Payload\SimpleChannelResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\SimpleChannel as OriginalSimpleChannel;
 
 class SimpleChannel extends OriginalSimpleChannel
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

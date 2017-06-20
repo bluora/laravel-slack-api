@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\UserProfile as OriginalUserProfile;
-use CL\Slack\Payload\UserProfileResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\UserProfile as OriginalUserProfile;
 
 class UserProfile extends OriginalUserProfile
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\MessageResult as OriginalMessageResult;
-use CL\Slack\Payload\MessageResultResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\MessageResult as OriginalMessageResult;
 
 class MessageResult extends OriginalMessageResult
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

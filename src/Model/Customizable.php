@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\Customizable as OriginalCustomizable;
-use CL\Slack\Payload\CustomizableResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\Customizable as OriginalCustomizable;
 
 class Customizable extends OriginalCustomizable
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

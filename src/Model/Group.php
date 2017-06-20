@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\Group as OriginalGroup;
-use CL\Slack\Payload\GroupResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\Group as OriginalGroup;
 
 class Group extends OriginalGroup
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

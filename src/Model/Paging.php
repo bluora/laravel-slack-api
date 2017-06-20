@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\Paging as OriginalPaging;
-use CL\Slack\Payload\PagingResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\Paging as OriginalPaging;
 
 class Paging extends OriginalPaging
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }

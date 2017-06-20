@@ -2,11 +2,20 @@
 
 namespace Bluora\LaravelSlackApi\Model;
 
-use CL\Slack\Payload\GroupWithState as OriginalGroupWithState;
-use CL\Slack\Payload\GroupWithStateResponse;
-use CL\Slack\Transport\ApiClient;
+use CL\Slack\Model\GroupWithState as OriginalGroupWithState;
 
 class GroupWithState extends OriginalGroupWithState
 {
 
+    /**
+     * Send.
+     *
+     * @return mixed.
+     */
+    public function send()
+    {
+        global $app;
+
+        return $app['bluora.slackapi']->send($this);
+    }
 }
