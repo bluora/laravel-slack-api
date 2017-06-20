@@ -62,7 +62,7 @@ class SlackApi
 
     public function __get($method_name, $arguments)
     {
-        $class_name = 'Bluora\LaravelSlackApi\\Payload\\'.$method_name;
+        $class_name = 'Bluora\\LaravelSlackApi\\Payload\\'.$method_name;
 
         if (class_exists($class_name)) {
             return new $class_name($this->client);
