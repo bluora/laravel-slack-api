@@ -10,7 +10,16 @@ engines:
   fixme:
     enabled: true
   phpmd:
-    enabled: true
+    enabled: true    
+    checks:
+      Controversial/CamelCaseParameterName:
+        enabled: false
+      Controversial/CamelCaseVariableName:
+        enabled: false
+      Controversial/CamelCasePropertyName:
+        enabled: false
+      CleanCode/StaticAccess:
+        enabled: false
 ratings:
   paths:
   - "**.php"
