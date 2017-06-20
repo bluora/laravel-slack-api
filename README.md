@@ -27,7 +27,7 @@ Enable the service provider by editing config/app.php:
 ```php
     'providers' => [
         ...
-        Bluora\LaravelSlack\ServiceProvider::class,
+        Bluora\LaravelSlackApi\ServiceProvider::class,
         ...
     ];
 ```
@@ -37,31 +37,11 @@ Enable the facade by editing config/app.php:
 ```php
     'aliases' => [
         ...
-        'Slack' => Bluora\LaravelSlack\Facade::class,
+        'Slack' => Bluora\LaravelSlackApi\Facade::class,
         ...
     ];
 ```
 
-Then [create an incoming webhook](https://my.slack.com/services/new/incoming-webhook) for each Slack team you'd like to send messages to. You'll need the webhook URL(s) in order to configure this package.
-
-Finally, publish the config file with `php artisan vendor:publish`. You'll find it at `config/slack.php`.
-
-## Configuration
-
-The config file comes with defaults and placeholders. Configure at least one team and any defaults you'd like to change.
-
-## Usage
-
-```php
-// Send a message to the default channel
-Slack::send('Hello world!');
-
-// Send a message to a different channel
-Slack::to('#accounting')->send('Are we rich yet?');
-
-// Send a private message
-Slack::to('@username')->send('psst!');
-```
 ## Contributing
 
 Please see [CONTRIBUTING](https://github.com/bluora/laravel-slack-api/blob/master/CONTRIBUTING.md) for details.
