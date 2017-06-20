@@ -20,7 +20,7 @@ This package has been developed by H&H|Digital, an Australian botique developer.
 
 Via composer:
 
-`$ composer require bluora/laravel-slack dev-master`
+`$ composer require bluora/laravel-slack-api dev-master`
 
 Enable the service provider by editing config/app.php:
 
