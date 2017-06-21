@@ -25,6 +25,20 @@ class ChannelsUnarchivePayload extends OriginalChannelsUnarchivePayload
     }
 
     /**
+     * Set the endpoint.
+     *
+     * @return mixed.
+     */
+    public function endpoint($endpoint)
+    {
+        global $app;
+
+        $app['bluora.slackapi']->endpoint($endpoint);
+
+        return $this;
+    }
+
+    /**
      * Send.
      *
      * @return mixed.

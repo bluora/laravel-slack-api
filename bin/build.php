@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-$src_dir = __DIR__.'/../vendor/bluora/php-slack-api/src/CL/Slack';
+$src_dir = __DIR__.'/../vendor/bluora/php-slack-api/src/';
 
 if (!file_exists($src_dir)) {
     echo "`$src_dir` does not exist.\n\nRun `composer install`.\n\n";

@@ -106,11 +106,26 @@ class SlackApi
             }
 
             if (class_exists($class_name)) {
+                $this->client->resetEndpoint();
                 return (new $class_name());
             }
         }
 
         throw new \Exception('That payload does not exist.');
+    }
+
+    /**
+     * Set the endpoint for the client.
+     *
+     * @param string $endpoint
+     *
+     * @return self
+     */
+    public function endpoint($endpoint)
+    {
+        $this->client->setEndpoint($endpoint);
+
+        return $this;
     }
 
     /**
