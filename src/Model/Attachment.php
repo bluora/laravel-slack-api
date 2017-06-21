@@ -136,17 +136,17 @@ class Attachment extends OriginalAttachment
     }
 
     /**
-     * Get or set the pre text.
+     * Get or set the pretext.
      *
-     * @param mixed $preText
+     * @param mixed $pretext
      */
-    public function preText($preText = false)
+    public function pretext($pretext = false)
     {
-        if ($preText === false) {
-            return $this->getPreText();
+        if ($pretext === false) {
+            return $this->getPretext();
         }
 
-        $this->setPreText($preText);
+        $this->setPretext($pretext);
 
         return $this;
     }
