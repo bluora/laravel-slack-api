@@ -11,8 +11,6 @@ engines:
     enabled: true
   phpmd:
     enabled: true
-    duplication:
-      enabled: true
     checks:
       Controversial/CamelCaseParameterName:
         enabled: false
