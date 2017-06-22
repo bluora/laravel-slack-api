@@ -41,54 +41,6 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     }
 
     /**
-     * Get or set the message.
-     *
-     * @param mixed $message
-     */
-    public function message()
-    {
-        if (func_num_args() == 0) {
-            return $this->getMessage();
-        }
-
-        $this->setMessage(func_get_arg(0));
-
-        return $this;
-    }
-
-    /**
-     * Get or set the username.
-     *
-     * @param mixed $username
-     */
-    public function username()
-    {
-        if (func_num_args() == 0) {
-            return $this->getUsername();
-        }
-
-        $this->setUsername(func_get_arg(0));
-
-        return $this;
-    }
-
-    /**
-     * Get or set the as user.
-     *
-     * @param mixed $asUser
-     */
-    public function asUser()
-    {
-        if (func_num_args() == 0) {
-            return $this->getAsUser();
-        }
-
-        $this->setAsUser(func_get_arg(0));
-
-        return $this;
-    }
-
-    /**
      * Get or set the parse.
      *
      * @param mixed $parse
@@ -105,33 +57,17 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     }
 
     /**
-     * Get or set the icon emoji.
+     * Get or set the link names.
      *
-     * @param mixed $iconEmoji
+     * @param mixed $linkNames
      */
-    public function iconEmoji()
+    public function linkNames()
     {
         if (func_num_args() == 0) {
-            return $this->getIconEmoji();
+            return $this->getLinkNames();
         }
 
-        $this->setIconEmoji(func_get_arg(0));
-
-        return $this;
-    }
-
-    /**
-     * Get or set the icon url.
-     *
-     * @param mixed $iconUrl
-     */
-    public function iconUrl()
-    {
-        if (func_num_args() == 0) {
-            return $this->getIconUrl();
-        }
-
-        $this->setIconUrl(func_get_arg(0));
+        $this->setLinkNames(func_get_arg(0));
 
         return $this;
     }
@@ -169,17 +105,97 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
     }
 
     /**
-     * Get or set the link names.
+     * Get or set the username.
      *
-     * @param mixed $linkNames
+     * @param mixed $username
      */
-    public function linkNames()
+    public function username()
     {
         if (func_num_args() == 0) {
-            return $this->getLinkNames();
+            return $this->getUsername();
         }
 
-        $this->setLinkNames(func_get_arg(0));
+        $this->setUsername(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the as user.
+     *
+     * @param mixed $asUser
+     */
+    public function asUser()
+    {
+        if (func_num_args() == 0) {
+            return $this->getAsUser();
+        }
+
+        $this->setAsUser(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the icon url.
+     *
+     * @param mixed $iconUrl
+     */
+    public function iconUrl()
+    {
+        if (func_num_args() == 0) {
+            return $this->getIconUrl();
+        }
+
+        $this->setIconUrl(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the icon emoji.
+     *
+     * @param mixed $iconEmoji
+     */
+    public function iconEmoji()
+    {
+        if (func_num_args() == 0) {
+            return $this->getIconEmoji();
+        }
+
+        $this->setIconEmoji(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the thread ts.
+     *
+     * @param mixed $threadTs
+     */
+    public function threadTs()
+    {
+        if (func_num_args() == 0) {
+            return $this->getThreadTs();
+        }
+
+        $this->setThreadTs(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the reply broadcast.
+     *
+     * @param mixed $replyBroadcast
+     */
+    public function replyBroadcast()
+    {
+        if (func_num_args() == 0) {
+            return $this->getReplyBroadcast();
+        }
+
+        $this->setReplyBroadcast(func_get_arg(0));
 
         return $this;
     }
