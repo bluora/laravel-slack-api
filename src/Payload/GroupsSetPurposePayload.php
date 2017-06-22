@@ -13,13 +13,13 @@ class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
      *
      * @param mixed $purpose
      */
-    public function purpose($purpose = false)
+    public function purpose()
     {
-        if ($purpose === false) {
+        if (func_num_args() == 0) {
             return $this->getPurpose();
         }
 
-        $this->setPurpose($purpose);
+        $this->setPurpose(func_get_arg(0));
 
         return $this;
     }

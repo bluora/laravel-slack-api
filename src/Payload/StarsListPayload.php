@@ -13,13 +13,13 @@ class StarsListPayload extends OriginalStarsListPayload
      *
      * @param mixed $userId
      */
-    public function userId($userId = false)
+    public function userId()
     {
-        if ($userId === false) {
+        if (func_num_args() == 0) {
             return $this->getUserId();
         }
 
-        $this->setUserId($userId);
+        $this->setUserId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class StarsListPayload extends OriginalStarsListPayload
      *
      * @param mixed $count
      */
-    public function count($count = false)
+    public function count()
     {
-        if ($count === false) {
+        if (func_num_args() == 0) {
             return $this->getCount();
         }
 
-        $this->setCount($count);
+        $this->setCount(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class StarsListPayload extends OriginalStarsListPayload
      *
      * @param mixed $page
      */
-    public function page($page = false)
+    public function page()
     {
-        if ($page === false) {
+        if (func_num_args() == 0) {
             return $this->getPage();
         }
 
-        $this->setPage($page);
+        $this->setPage(func_get_arg(0));
 
         return $this;
     }

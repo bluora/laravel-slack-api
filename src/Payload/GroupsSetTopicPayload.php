@@ -13,13 +13,13 @@ class GroupsSetTopicPayload extends OriginalGroupsSetTopicPayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class GroupsSetTopicPayload extends OriginalGroupsSetTopicPayload
      *
      * @param mixed $topic
      */
-    public function topic($topic = false)
+    public function topic()
     {
-        if ($topic === false) {
+        if (func_num_args() == 0) {
             return $this->getTopic();
         }
 
-        $this->setTopic($topic);
+        $this->setTopic(func_get_arg(0));
 
         return $this;
     }

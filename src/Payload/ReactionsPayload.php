@@ -13,13 +13,13 @@ class ReactionsPayload extends OriginalReactionsPayload
      *
      * @param mixed $channelId
      */
-    public function channelId($channelId = false)
+    public function channelId()
     {
-        if ($channelId === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelId();
         }
 
-        $this->setChannelId($channelId);
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ReactionsPayload extends OriginalReactionsPayload
      *
      * @param mixed $timestamp
      */
-    public function timestamp($timestamp = false)
+    public function timestamp()
     {
-        if ($timestamp === false) {
+        if (func_num_args() == 0) {
             return $this->getTimestamp();
         }
 
-        $this->setTimestamp($timestamp);
+        $this->setTimestamp(func_get_arg(0));
 
         return $this;
     }

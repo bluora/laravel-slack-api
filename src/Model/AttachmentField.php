@@ -12,13 +12,13 @@ class AttachmentField extends OriginalAttachmentField
      *
      * @param mixed $title
      */
-    public function title($title = false)
+    public function title()
     {
-        if ($title === false) {
+        if (func_num_args() == 0) {
             return $this->getTitle();
         }
 
-        $this->setTitle($title);
+        $this->setTitle(func_get_arg(0));
 
         return $this;
     }
@@ -28,13 +28,13 @@ class AttachmentField extends OriginalAttachmentField
      *
      * @param mixed $value
      */
-    public function value($value = false)
+    public function value()
     {
-        if ($value === false) {
+        if (func_num_args() == 0) {
             return $this->getValue();
         }
 
-        $this->setValue($value);
+        $this->setValue(func_get_arg(0));
 
         return $this;
     }
@@ -44,13 +44,13 @@ class AttachmentField extends OriginalAttachmentField
      *
      * @param mixed $short
      */
-    public function short($short = false)
+    public function short()
     {
-        if ($short === false) {
+        if (func_num_args() == 0) {
             return $this->getShort();
         }
 
-        $this->setShort($short);
+        $this->setShort(func_get_arg(0));
 
         return $this;
     }

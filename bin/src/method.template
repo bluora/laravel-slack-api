@@ -4,13 +4,13 @@
      *
      * @param mixed {$method_argument}
      */
-    public function {$new_method_name}({$method_argument} = false)
+    public function {$new_method_name}()
     {
-        if ({$method_argument} === false) {
+        if (func_num_args() == 0) {
             return $this->get{$method_name}();
         }
 
-        $this->set{$method_name}({$method_argument});
+        $this->set{$method_name}(func_get_arg(0));
 
         return $this;
     }

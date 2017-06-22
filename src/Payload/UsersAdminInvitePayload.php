@@ -13,13 +13,13 @@ class UsersAdminInvitePayload extends OriginalUsersAdminInvitePayload
      *
      * @param mixed $email
      */
-    public function email($email = false)
+    public function email()
     {
-        if ($email === false) {
+        if (func_num_args() == 0) {
             return $this->getEmail();
         }
 
-        $this->setEmail($email);
+        $this->setEmail(func_get_arg(0));
 
         return $this;
     }

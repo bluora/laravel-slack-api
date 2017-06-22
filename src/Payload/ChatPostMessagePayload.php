@@ -13,13 +13,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $channel
      */
-    public function channel($channel = false)
+    public function channel()
     {
-        if ($channel === false) {
+        if (func_num_args() == 0) {
             return $this->getChannel();
         }
 
-        $this->setChannel($channel);
+        $this->setChannel(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $text
      */
-    public function text($text = false)
+    public function text()
     {
-        if ($text === false) {
+        if (func_num_args() == 0) {
             return $this->getText();
         }
 
-        $this->setText($text);
+        $this->setText(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $message
      */
-    public function message($message = false)
+    public function message()
     {
-        if ($message === false) {
+        if (func_num_args() == 0) {
             return $this->getMessage();
         }
 
-        $this->setMessage($message);
+        $this->setMessage(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $username
      */
-    public function username($username = false)
+    public function username()
     {
-        if ($username === false) {
+        if (func_num_args() == 0) {
             return $this->getUsername();
         }
 
-        $this->setUsername($username);
+        $this->setUsername(func_get_arg(0));
 
         return $this;
     }
@@ -77,13 +77,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $asUser
      */
-    public function asUser($asUser = false)
+    public function asUser()
     {
-        if ($asUser === false) {
+        if (func_num_args() == 0) {
             return $this->getAsUser();
         }
 
-        $this->setAsUser($asUser);
+        $this->setAsUser(func_get_arg(0));
 
         return $this;
     }
@@ -93,13 +93,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $parse
      */
-    public function parse($parse = false)
+    public function parse()
     {
-        if ($parse === false) {
+        if (func_num_args() == 0) {
             return $this->getParse();
         }
 
-        $this->setParse($parse);
+        $this->setParse(func_get_arg(0));
 
         return $this;
     }
@@ -109,13 +109,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $iconEmoji
      */
-    public function iconEmoji($iconEmoji = false)
+    public function iconEmoji()
     {
-        if ($iconEmoji === false) {
+        if (func_num_args() == 0) {
             return $this->getIconEmoji();
         }
 
-        $this->setIconEmoji($iconEmoji);
+        $this->setIconEmoji(func_get_arg(0));
 
         return $this;
     }
@@ -125,13 +125,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $iconUrl
      */
-    public function iconUrl($iconUrl = false)
+    public function iconUrl()
     {
-        if ($iconUrl === false) {
+        if (func_num_args() == 0) {
             return $this->getIconUrl();
         }
 
-        $this->setIconUrl($iconUrl);
+        $this->setIconUrl(func_get_arg(0));
 
         return $this;
     }
@@ -141,13 +141,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $unfurlLinks
      */
-    public function unfurlLinks($unfurlLinks = false)
+    public function unfurlLinks()
     {
-        if ($unfurlLinks === false) {
+        if (func_num_args() == 0) {
             return $this->getUnfurlLinks();
         }
 
-        $this->setUnfurlLinks($unfurlLinks);
+        $this->setUnfurlLinks(func_get_arg(0));
 
         return $this;
     }
@@ -157,13 +157,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $unfurlMedia
      */
-    public function unfurlMedia($unfurlMedia = false)
+    public function unfurlMedia()
     {
-        if ($unfurlMedia === false) {
+        if (func_num_args() == 0) {
             return $this->getUnfurlMedia();
         }
 
-        $this->setUnfurlMedia($unfurlMedia);
+        $this->setUnfurlMedia(func_get_arg(0));
 
         return $this;
     }
@@ -173,13 +173,13 @@ class ChatPostMessagePayload extends OriginalChatPostMessagePayload
      *
      * @param mixed $linkNames
      */
-    public function linkNames($linkNames = false)
+    public function linkNames()
     {
-        if ($linkNames === false) {
+        if (func_num_args() == 0) {
             return $this->getLinkNames();
         }
 
-        $this->setLinkNames($linkNames);
+        $this->setLinkNames(func_get_arg(0));
 
         return $this;
     }

@@ -13,13 +13,13 @@ class UsersGetPresencePayload extends OriginalUsersGetPresencePayload
      *
      * @param mixed $userId
      */
-    public function userId($userId = false)
+    public function userId()
     {
-        if ($userId === false) {
+        if (func_num_args() == 0) {
             return $this->getUserId();
         }
 
-        $this->setUserId($userId);
+        $this->setUserId(func_get_arg(0));
 
         return $this;
     }

@@ -13,13 +13,13 @@ class GroupsMarkPayload extends OriginalGroupsMarkPayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class GroupsMarkPayload extends OriginalGroupsMarkPayload
      *
      * @param mixed $slackTimestamp
      */
-    public function slackTimestamp($slackTimestamp = false)
+    public function slackTimestamp()
     {
-        if ($slackTimestamp === false) {
+        if (func_num_args() == 0) {
             return $this->getSlackTimestamp();
         }
 
-        $this->setSlackTimestamp($slackTimestamp);
+        $this->setSlackTimestamp(func_get_arg(0));
 
         return $this;
     }

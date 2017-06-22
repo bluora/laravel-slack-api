@@ -13,13 +13,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $channelId
      */
-    public function channelId($channelId = false)
+    public function channelId()
     {
-        if ($channelId === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelId();
         }
 
-        $this->setChannelId($channelId);
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $slackTimestamp
      */
-    public function slackTimestamp($slackTimestamp = false)
+    public function slackTimestamp()
     {
-        if ($slackTimestamp === false) {
+        if (func_num_args() == 0) {
             return $this->getSlackTimestamp();
         }
 
-        $this->setSlackTimestamp($slackTimestamp);
+        $this->setSlackTimestamp(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $text
      */
-    public function text($text = false)
+    public function text()
     {
-        if ($text === false) {
+        if (func_num_args() == 0) {
             return $this->getText();
         }
 
-        $this->setText($text);
+        $this->setText(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $message
      */
-    public function message($message = false)
+    public function message()
     {
-        if ($message === false) {
+        if (func_num_args() == 0) {
             return $this->getMessage();
         }
 
-        $this->setMessage($message);
+        $this->setMessage(func_get_arg(0));
 
         return $this;
     }
@@ -77,13 +77,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $parse
      */
-    public function parse($parse = false)
+    public function parse()
     {
-        if ($parse === false) {
+        if (func_num_args() == 0) {
             return $this->getParse();
         }
 
-        $this->setParse($parse);
+        $this->setParse(func_get_arg(0));
 
         return $this;
     }
@@ -93,13 +93,13 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
      *
      * @param mixed $linkNames
      */
-    public function linkNames($linkNames = false)
+    public function linkNames()
     {
-        if ($linkNames === false) {
+        if (func_num_args() == 0) {
             return $this->getLinkNames();
         }
 
-        $this->setLinkNames($linkNames);
+        $this->setLinkNames(func_get_arg(0));
 
         return $this;
     }

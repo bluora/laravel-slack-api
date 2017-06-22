@@ -13,13 +13,13 @@ class UsersListPayload extends OriginalUsersListPayload
      *
      * @param mixed $presence
      */
-    public function presence($presence = false)
+    public function presence()
     {
-        if ($presence === false) {
+        if (func_num_args() == 0) {
             return $this->getPresence();
         }
 
-        $this->setPresence($presence);
+        $this->setPresence(func_get_arg(0));
 
         return $this;
     }

@@ -13,13 +13,13 @@ class ChannelsSetPurposePayload extends OriginalChannelsSetPurposePayload
      *
      * @param mixed $channelId
      */
-    public function channelId($channelId = false)
+    public function channelId()
     {
-        if ($channelId === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelId();
         }
 
-        $this->setChannelId($channelId);
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ChannelsSetPurposePayload extends OriginalChannelsSetPurposePayload
      *
      * @param mixed $purpose
      */
-    public function purpose($purpose = false)
+    public function purpose()
     {
-        if ($purpose === false) {
+        if (func_num_args() == 0) {
             return $this->getPurpose();
         }
 
-        $this->setPurpose($purpose);
+        $this->setPurpose(func_get_arg(0));
 
         return $this;
     }

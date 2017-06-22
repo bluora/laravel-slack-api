@@ -13,13 +13,13 @@ class ChannelsInvitePayload extends OriginalChannelsInvitePayload
      *
      * @param mixed $channelId
      */
-    public function channelId($channelId = false)
+    public function channelId()
     {
-        if ($channelId === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelId();
         }
 
-        $this->setChannelId($channelId);
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ChannelsInvitePayload extends OriginalChannelsInvitePayload
      *
      * @param mixed $userId
      */
-    public function userId($userId = false)
+    public function userId()
     {
-        if ($userId === false) {
+        if (func_num_args() == 0) {
             return $this->getUserId();
         }
 
-        $this->setUserId($userId);
+        $this->setUserId(func_get_arg(0));
 
         return $this;
     }

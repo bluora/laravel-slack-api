@@ -13,13 +13,13 @@ class ImClosePayload extends OriginalImClosePayload
      *
      * @param mixed $imId
      */
-    public function imId($imId = false)
+    public function imId()
     {
-        if ($imId === false) {
+        if (func_num_args() == 0) {
             return $this->getImId();
         }
 
-        $this->setImId($imId);
+        $this->setImId(func_get_arg(0));
 
         return $this;
     }

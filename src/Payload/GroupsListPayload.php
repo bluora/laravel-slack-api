@@ -13,13 +13,13 @@ class GroupsListPayload extends OriginalGroupsListPayload
      *
      * @param mixed $excludeArchived
      */
-    public function excludeArchived($excludeArchived = false)
+    public function excludeArchived()
     {
-        if ($excludeArchived === false) {
+        if (func_num_args() == 0) {
             return $this->getExcludeArchived();
         }
 
-        $this->setExcludeArchived($excludeArchived);
+        $this->setExcludeArchived(func_get_arg(0));
 
         return $this;
     }

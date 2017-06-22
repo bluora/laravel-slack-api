@@ -13,13 +13,13 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
      *
      * @param mixed $count
      */
-    public function count($count = false)
+    public function count()
     {
-        if ($count === false) {
+        if (func_num_args() == 0) {
             return $this->getCount();
         }
 
-        $this->setCount($count);
+        $this->setCount(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
      *
      * @param mixed $fileId
      */
-    public function fileId($fileId = false)
+    public function fileId()
     {
-        if ($fileId === false) {
+        if (func_num_args() == 0) {
             return $this->getFileId();
         }
 
-        $this->setFileId($fileId);
+        $this->setFileId(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class FilesInfoPayload extends OriginalFilesInfoPayload
      *
      * @param mixed $page
      */
-    public function page($page = false)
+    public function page()
     {
-        if ($page === false) {
+        if (func_num_args() == 0) {
             return $this->getPage();
         }
 
-        $this->setPage($page);
+        $this->setPage(func_get_arg(0));
 
         return $this;
     }

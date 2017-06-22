@@ -13,13 +13,13 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
      *
      * @param mixed $latest
      */
-    public function latest($latest = false)
+    public function latest()
     {
-        if ($latest === false) {
+        if (func_num_args() == 0) {
             return $this->getLatest();
         }
 
-        $this->setLatest($latest);
+        $this->setLatest(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
      *
      * @param mixed $oldest
      */
-    public function oldest($oldest = false)
+    public function oldest()
     {
-        if ($oldest === false) {
+        if (func_num_args() == 0) {
             return $this->getOldest();
         }
 
-        $this->setOldest($oldest);
+        $this->setOldest(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
      *
      * @param mixed $count
      */
-    public function count($count = false)
+    public function count()
     {
-        if ($count === false) {
+        if (func_num_args() == 0) {
             return $this->getCount();
         }
 
-        $this->setCount($count);
+        $this->setCount(func_get_arg(0));
 
         return $this;
     }
@@ -77,13 +77,13 @@ class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
      *
      * @param mixed $inclusive
      */
-    public function inclusive($inclusive = false)
+    public function inclusive()
     {
-        if ($inclusive === false) {
+        if (func_num_args() == 0) {
             return $this->getInclusive();
         }
 
-        $this->setInclusive($inclusive);
+        $this->setInclusive(func_get_arg(0));
 
         return $this;
     }

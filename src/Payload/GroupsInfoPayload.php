@@ -13,13 +13,13 @@ class GroupsInfoPayload extends OriginalGroupsInfoPayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }

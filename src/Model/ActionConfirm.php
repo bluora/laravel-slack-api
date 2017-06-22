@@ -12,13 +12,13 @@ class ActionConfirm extends OriginalActionConfirm
      *
      * @param mixed $title
      */
-    public function title($title = false)
+    public function title()
     {
-        if ($title === false) {
+        if (func_num_args() == 0) {
             return $this->getTitle();
         }
 
-        $this->setTitle($title);
+        $this->setTitle(func_get_arg(0));
 
         return $this;
     }
@@ -28,13 +28,13 @@ class ActionConfirm extends OriginalActionConfirm
      *
      * @param mixed $text
      */
-    public function text($text = false)
+    public function text()
     {
-        if ($text === false) {
+        if (func_num_args() == 0) {
             return $this->getText();
         }
 
-        $this->setText($text);
+        $this->setText(func_get_arg(0));
 
         return $this;
     }
@@ -44,13 +44,13 @@ class ActionConfirm extends OriginalActionConfirm
      *
      * @param mixed $okText
      */
-    public function okText($okText = false)
+    public function okText()
     {
-        if ($okText === false) {
+        if (func_num_args() == 0) {
             return $this->getOkText();
         }
 
-        $this->setOkText($okText);
+        $this->setOkText(func_get_arg(0));
 
         return $this;
     }
@@ -60,13 +60,13 @@ class ActionConfirm extends OriginalActionConfirm
      *
      * @param mixed $dismissText
      */
-    public function dismissText($dismissText = false)
+    public function dismissText()
     {
-        if ($dismissText === false) {
+        if (func_num_args() == 0) {
             return $this->getDismissText();
         }
 
-        $this->setDismissText($dismissText);
+        $this->setDismissText(func_get_arg(0));
 
         return $this;
     }

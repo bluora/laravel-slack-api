@@ -13,13 +13,13 @@ class ChannelsJoinPayload extends OriginalChannelsJoinPayload
      *
      * @param mixed $name
      */
-    public function name($name = false)
+    public function name()
     {
-        if ($name === false) {
+        if (func_num_args() == 0) {
             return $this->getName();
         }
 
-        $this->setName($name);
+        $this->setName(func_get_arg(0));
 
         return $this;
     }

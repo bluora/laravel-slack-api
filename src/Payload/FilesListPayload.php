@@ -13,13 +13,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $userId
      */
-    public function userId($userId = false)
+    public function userId()
     {
-        if ($userId === false) {
+        if (func_num_args() == 0) {
             return $this->getUserId();
         }
 
-        $this->setUserId($userId);
+        $this->setUserId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $timestampFrom
      */
-    public function timestampFrom($timestampFrom = false)
+    public function timestampFrom()
     {
-        if ($timestampFrom === false) {
+        if (func_num_args() == 0) {
             return $this->getTimestampFrom();
         }
 
-        $this->setTimestampFrom($timestampFrom);
+        $this->setTimestampFrom(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $timestampTo
      */
-    public function timestampTo($timestampTo = false)
+    public function timestampTo()
     {
-        if ($timestampTo === false) {
+        if (func_num_args() == 0) {
             return $this->getTimestampTo();
         }
 
-        $this->setTimestampTo($timestampTo);
+        $this->setTimestampTo(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $count
      */
-    public function count($count = false)
+    public function count()
     {
-        if ($count === false) {
+        if (func_num_args() == 0) {
             return $this->getCount();
         }
 
-        $this->setCount($count);
+        $this->setCount(func_get_arg(0));
 
         return $this;
     }
@@ -77,13 +77,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $page
      */
-    public function page($page = false)
+    public function page()
     {
-        if ($page === false) {
+        if (func_num_args() == 0) {
             return $this->getPage();
         }
 
-        $this->setPage($page);
+        $this->setPage(func_get_arg(0));
 
         return $this;
     }
@@ -93,13 +93,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $types
      */
-    public function types($types = false)
+    public function types()
     {
-        if ($types === false) {
+        if (func_num_args() == 0) {
             return $this->getTypes();
         }
 
-        $this->setTypes($types);
+        $this->setTypes(func_get_arg(0));
 
         return $this;
     }
@@ -109,13 +109,13 @@ class FilesListPayload extends OriginalFilesListPayload
      *
      * @param mixed $typesFromString
      */
-    public function typesFromString($typesFromString = false)
+    public function typesFromString()
     {
-        if ($typesFromString === false) {
+        if (func_num_args() == 0) {
             return $this->getTypesFromString();
         }
 
-        $this->setTypesFromString($typesFromString);
+        $this->setTypesFromString(func_get_arg(0));
 
         return $this;
     }

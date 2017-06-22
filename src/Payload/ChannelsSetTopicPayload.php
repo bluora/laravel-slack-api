@@ -13,13 +13,13 @@ class ChannelsSetTopicPayload extends OriginalChannelsSetTopicPayload
      *
      * @param mixed $channelId
      */
-    public function channelId($channelId = false)
+    public function channelId()
     {
-        if ($channelId === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelId();
         }
 
-        $this->setChannelId($channelId);
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ChannelsSetTopicPayload extends OriginalChannelsSetTopicPayload
      *
      * @param mixed $topic
      */
-    public function topic($topic = false)
+    public function topic()
     {
-        if ($topic === false) {
+        if (func_num_args() == 0) {
             return $this->getTopic();
         }
 
-        $this->setTopic($topic);
+        $this->setTopic(func_get_arg(0));
 
         return $this;
     }

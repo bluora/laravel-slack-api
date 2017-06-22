@@ -12,13 +12,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $title
      */
-    public function title($title = false)
+    public function title()
     {
-        if ($title === false) {
+        if (func_num_args() == 0) {
             return $this->getTitle();
         }
 
-        $this->setTitle($title);
+        $this->setTitle(func_get_arg(0));
 
         return $this;
     }
@@ -28,13 +28,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $titleLink
      */
-    public function titleLink($titleLink = false)
+    public function titleLink()
     {
-        if ($titleLink === false) {
+        if (func_num_args() == 0) {
             return $this->getTitleLink();
         }
 
-        $this->setTitleLink($titleLink);
+        $this->setTitleLink(func_get_arg(0));
 
         return $this;
     }
@@ -44,13 +44,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $imageUrl
      */
-    public function imageUrl($imageUrl = false)
+    public function imageUrl()
     {
-        if ($imageUrl === false) {
+        if (func_num_args() == 0) {
             return $this->getImageUrl();
         }
 
-        $this->setImageUrl($imageUrl);
+        $this->setImageUrl(func_get_arg(0));
 
         return $this;
     }
@@ -60,13 +60,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $authorName
      */
-    public function authorName($authorName = false)
+    public function authorName()
     {
-        if ($authorName === false) {
+        if (func_num_args() == 0) {
             return $this->getAuthorName();
         }
 
-        $this->setAuthorName($authorName);
+        $this->setAuthorName(func_get_arg(0));
 
         return $this;
     }
@@ -76,13 +76,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $authorLink
      */
-    public function authorLink($authorLink = false)
+    public function authorLink()
     {
-        if ($authorLink === false) {
+        if (func_num_args() == 0) {
             return $this->getAuthorLink();
         }
 
-        $this->setAuthorLink($authorLink);
+        $this->setAuthorLink(func_get_arg(0));
 
         return $this;
     }
@@ -92,13 +92,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $authorIcon
      */
-    public function authorIcon($authorIcon = false)
+    public function authorIcon()
     {
-        if ($authorIcon === false) {
+        if (func_num_args() == 0) {
             return $this->getAuthorIcon();
         }
 
-        $this->setAuthorIcon($authorIcon);
+        $this->setAuthorIcon(func_get_arg(0));
 
         return $this;
     }
@@ -108,13 +108,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $fallback
      */
-    public function fallback($fallback = false)
+    public function fallback()
     {
-        if ($fallback === false) {
+        if (func_num_args() == 0) {
             return $this->getFallback();
         }
 
-        $this->setFallback($fallback);
+        $this->setFallback(func_get_arg(0));
 
         return $this;
     }
@@ -124,13 +124,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $callbackId
      */
-    public function callbackId($callbackId = false)
+    public function callbackId()
     {
-        if ($callbackId === false) {
+        if (func_num_args() == 0) {
             return $this->getCallbackId();
         }
 
-        $this->setCallbackId($callbackId);
+        $this->setCallbackId(func_get_arg(0));
 
         return $this;
     }
@@ -140,13 +140,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $pretext
      */
-    public function pretext($pretext = false)
+    public function pretext()
     {
-        if ($pretext === false) {
+        if (func_num_args() == 0) {
             return $this->getPretext();
         }
 
-        $this->setPretext($pretext);
+        $this->setPretext(func_get_arg(0));
 
         return $this;
     }
@@ -156,13 +156,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $text
      */
-    public function text($text = false)
+    public function text()
     {
-        if ($text === false) {
+        if (func_num_args() == 0) {
             return $this->getText();
         }
 
-        $this->setText($text);
+        $this->setText(func_get_arg(0));
 
         return $this;
     }
@@ -172,13 +172,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $color
      */
-    public function color($color = false)
+    public function color()
     {
-        if ($color === false) {
+        if (func_num_args() == 0) {
             return $this->getColor();
         }
 
-        $this->setColor($color);
+        $this->setColor(func_get_arg(0));
 
         return $this;
     }
@@ -188,13 +188,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $mrkdwnIn
      */
-    public function mrkdwnIn($mrkdwnIn = false)
+    public function mrkdwnIn()
     {
-        if ($mrkdwnIn === false) {
+        if (func_num_args() == 0) {
             return $this->getMrkdwnIn();
         }
 
-        $this->setMrkdwnIn($mrkdwnIn);
+        $this->setMrkdwnIn(func_get_arg(0));
 
         return $this;
     }
@@ -204,13 +204,13 @@ class Attachment extends OriginalAttachment
      *
      * @param mixed $footer
      */
-    public function footer($footer = false)
+    public function footer()
     {
-        if ($footer === false) {
+        if (func_num_args() == 0) {
             return $this->getFooter();
         }
 
-        $this->setFooter($footer);
+        $this->setFooter(func_get_arg(0));
 
         return $this;
     }

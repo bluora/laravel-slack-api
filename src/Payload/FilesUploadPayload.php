@@ -13,13 +13,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $file
      */
-    public function file($file = false)
+    public function file()
     {
-        if ($file === false) {
+        if (func_num_args() == 0) {
             return $this->getFile();
         }
 
-        $this->setFile($file);
+        $this->setFile(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $filename
      */
-    public function filename($filename = false)
+    public function filename()
     {
-        if ($filename === false) {
+        if (func_num_args() == 0) {
             return $this->getFilename();
         }
 
-        $this->setFilename($filename);
+        $this->setFilename(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $fileType
      */
-    public function fileType($fileType = false)
+    public function fileType()
     {
-        if ($fileType === false) {
+        if (func_num_args() == 0) {
             return $this->getFileType();
         }
 
-        $this->setFileType($fileType);
+        $this->setFileType(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $title
      */
-    public function title($title = false)
+    public function title()
     {
-        if ($title === false) {
+        if (func_num_args() == 0) {
             return $this->getTitle();
         }
 
-        $this->setTitle($title);
+        $this->setTitle(func_get_arg(0));
 
         return $this;
     }
@@ -77,13 +77,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $content
      */
-    public function content($content = false)
+    public function content()
     {
-        if ($content === false) {
+        if (func_num_args() == 0) {
             return $this->getContent();
         }
 
-        $this->setContent($content);
+        $this->setContent(func_get_arg(0));
 
         return $this;
     }
@@ -93,13 +93,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $channels
      */
-    public function channels($channels = false)
+    public function channels()
     {
-        if ($channels === false) {
+        if (func_num_args() == 0) {
             return $this->getChannels();
         }
 
-        $this->setChannels($channels);
+        $this->setChannels(func_get_arg(0));
 
         return $this;
     }
@@ -109,13 +109,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $channelsFromString
      */
-    public function channelsFromString($channelsFromString = false)
+    public function channelsFromString()
     {
-        if ($channelsFromString === false) {
+        if (func_num_args() == 0) {
             return $this->getChannelsFromString();
         }
 
-        $this->setChannelsFromString($channelsFromString);
+        $this->setChannelsFromString(func_get_arg(0));
 
         return $this;
     }
@@ -125,13 +125,13 @@ class FilesUploadPayload extends OriginalFilesUploadPayload
      *
      * @param mixed $initialComment
      */
-    public function initialComment($initialComment = false)
+    public function initialComment()
     {
-        if ($initialComment === false) {
+        if (func_num_args() == 0) {
             return $this->getInitialComment();
         }
 
-        $this->setInitialComment($initialComment);
+        $this->setInitialComment(func_get_arg(0));
 
         return $this;
     }

@@ -13,13 +13,13 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
      *
      * @param mixed $clientId
      */
-    public function clientId($clientId = false)
+    public function clientId()
     {
-        if ($clientId === false) {
+        if (func_num_args() == 0) {
             return $this->getClientId();
         }
 
-        $this->setClientId($clientId);
+        $this->setClientId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
      *
      * @param mixed $clientSecret
      */
-    public function clientSecret($clientSecret = false)
+    public function clientSecret()
     {
-        if ($clientSecret === false) {
+        if (func_num_args() == 0) {
             return $this->getClientSecret();
         }
 
-        $this->setClientSecret($clientSecret);
+        $this->setClientSecret(func_get_arg(0));
 
         return $this;
     }
@@ -45,13 +45,13 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
      *
      * @param mixed $code
      */
-    public function code($code = false)
+    public function code()
     {
-        if ($code === false) {
+        if (func_num_args() == 0) {
             return $this->getCode();
         }
 
-        $this->setCode($code);
+        $this->setCode(func_get_arg(0));
 
         return $this;
     }
@@ -61,13 +61,13 @@ class OauthAccessPayload extends OriginalOauthAccessPayload
      *
      * @param mixed $redirectUri
      */
-    public function redirectUri($redirectUri = false)
+    public function redirectUri()
     {
-        if ($redirectUri === false) {
+        if (func_num_args() == 0) {
             return $this->getRedirectUri();
         }
 
-        $this->setRedirectUri($redirectUri);
+        $this->setRedirectUri(func_get_arg(0));
 
         return $this;
     }

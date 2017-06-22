@@ -13,13 +13,13 @@ class ImMarkPayload extends OriginalImMarkPayload
      *
      * @param mixed $imId
      */
-    public function imId($imId = false)
+    public function imId()
     {
-        if ($imId === false) {
+        if (func_num_args() == 0) {
             return $this->getImId();
         }
 
-        $this->setImId($imId);
+        $this->setImId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class ImMarkPayload extends OriginalImMarkPayload
      *
      * @param mixed $slackTimestamp
      */
-    public function slackTimestamp($slackTimestamp = false)
+    public function slackTimestamp()
     {
-        if ($slackTimestamp === false) {
+        if (func_num_args() == 0) {
             return $this->getSlackTimestamp();
         }
 
-        $this->setSlackTimestamp($slackTimestamp);
+        $this->setSlackTimestamp(func_get_arg(0));
 
         return $this;
     }

@@ -13,13 +13,13 @@ class GroupsInvitePayload extends OriginalGroupsInvitePayload
      *
      * @param mixed $groupId
      */
-    public function groupId($groupId = false)
+    public function groupId()
     {
-        if ($groupId === false) {
+        if (func_num_args() == 0) {
             return $this->getGroupId();
         }
 
-        $this->setGroupId($groupId);
+        $this->setGroupId(func_get_arg(0));
 
         return $this;
     }
@@ -29,13 +29,13 @@ class GroupsInvitePayload extends OriginalGroupsInvitePayload
      *
      * @param mixed $userId
      */
-    public function userId($userId = false)
+    public function userId()
     {
-        if ($userId === false) {
+        if (func_num_args() == 0) {
             return $this->getUserId();
         }
 
-        $this->setUserId($userId);
+        $this->setUserId(func_get_arg(0));
 
         return $this;
     }

@@ -12,13 +12,13 @@ class AttachmentAction extends OriginalAttachmentAction
      *
      * @param mixed $name
      */
-    public function name($name = false)
+    public function name()
     {
-        if ($name === false) {
+        if (func_num_args() == 0) {
             return $this->getName();
         }
 
-        $this->setName($name);
+        $this->setName(func_get_arg(0));
 
         return $this;
     }
@@ -28,13 +28,13 @@ class AttachmentAction extends OriginalAttachmentAction
      *
      * @param mixed $text
      */
-    public function text($text = false)
+    public function text()
     {
-        if ($text === false) {
+        if (func_num_args() == 0) {
             return $this->getText();
         }
 
-        $this->setText($text);
+        $this->setText(func_get_arg(0));
 
         return $this;
     }
@@ -44,13 +44,13 @@ class AttachmentAction extends OriginalAttachmentAction
      *
      * @param mixed $style
      */
-    public function style($style = false)
+    public function style()
     {
-        if ($style === false) {
+        if (func_num_args() == 0) {
             return $this->getStyle();
         }
 
-        $this->setStyle($style);
+        $this->setStyle(func_get_arg(0));
 
         return $this;
     }
@@ -60,13 +60,13 @@ class AttachmentAction extends OriginalAttachmentAction
      *
      * @param mixed $type
      */
-    public function type($type = false)
+    public function type()
     {
-        if ($type === false) {
+        if (func_num_args() == 0) {
             return $this->getType();
         }
 
-        $this->setType($type);
+        $this->setType(func_get_arg(0));
 
         return $this;
     }
@@ -76,13 +76,13 @@ class AttachmentAction extends OriginalAttachmentAction
      *
      * @param mixed $value
      */
-    public function value($value = false)
+    public function value()
     {
-        if ($value === false) {
+        if (func_num_args() == 0) {
             return $this->getValue();
         }
 
-        $this->setValue($value);
+        $this->setValue(func_get_arg(0));
 
         return $this;
     }
