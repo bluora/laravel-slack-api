@@ -20,8 +20,6 @@ engines:
         enabled: false
       CleanCode/StaticAccess:
         enabled: false
-      Identical code:
-        enabled: false
 ratings:
   paths:
   - "**.php"
