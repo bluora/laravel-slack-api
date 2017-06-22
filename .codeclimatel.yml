@@ -10,7 +10,9 @@ engines:
   fixme:
     enabled: true
   phpmd:
-    enabled: true    
+    enabled: true
+    duplication:
+      enabled: true
     checks:
       Controversial/CamelCaseParameterName:
         enabled: false
