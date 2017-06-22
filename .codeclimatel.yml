@@ -1,6 +1,6 @@
 engines:
   duplication:
-    enabled: true
+    enabled: false
     checks:
       Identical code:
         enabled: false
