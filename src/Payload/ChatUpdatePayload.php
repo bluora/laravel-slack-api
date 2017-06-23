@@ -9,33 +9,33 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
 {
 
     /**
-     * Get or set the channel id.
+     * Get or set the ts.
      *
-     * @param mixed $channelId
+     * @param mixed $ts
      */
-    public function channelId()
+    public function ts()
     {
         if (func_num_args() == 0) {
-            return $this->getChannelId();
+            return $this->getTs();
         }
 
-        $this->setChannelId(func_get_arg(0));
+        $this->setTs(func_get_arg(0));
 
         return $this;
     }
 
     /**
-     * Get or set the slack timestamp.
+     * Get or set the channel.
      *
-     * @param mixed $slackTimestamp
+     * @param mixed $channel
      */
-    public function slackTimestamp()
+    public function channel()
     {
         if (func_num_args() == 0) {
-            return $this->getSlackTimestamp();
+            return $this->getChannel();
         }
 
-        $this->setSlackTimestamp(func_get_arg(0));
+        $this->setChannel(func_get_arg(0));
 
         return $this;
     }
@@ -52,22 +52,6 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
         }
 
         $this->setText(func_get_arg(0));
-
-        return $this;
-    }
-
-    /**
-     * Get or set the message.
-     *
-     * @param mixed $message
-     */
-    public function message()
-    {
-        if (func_num_args() == 0) {
-            return $this->getMessage();
-        }
-
-        $this->setMessage(func_get_arg(0));
 
         return $this;
     }
@@ -100,6 +84,22 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
         }
 
         $this->setLinkNames(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
+     * Get or set the as user.
+     *
+     * @param mixed $asUser
+     */
+    public function asUser()
+    {
+        if (func_num_args() == 0) {
+            return $this->getAsUser();
+        }
+
+        $this->setAsUser(func_get_arg(0));
 
         return $this;
     }
