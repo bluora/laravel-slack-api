@@ -25,17 +25,17 @@ class ChatUpdatePayload extends OriginalChatUpdatePayload
     }
 
     /**
-     * Get or set the channel.
+     * Get or set the channel id.
      *
-     * @param mixed $channel
+     * @param mixed $channelId
      */
-    public function channel()
+    public function channelId()
     {
         if (func_num_args() == 0) {
-            return $this->getChannel();
+            return $this->getChannelId();
         }
 
-        $this->setChannel(func_get_arg(0));
+        $this->setChannelId(func_get_arg(0));
 
         return $this;
     }
