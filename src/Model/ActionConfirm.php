@@ -94,6 +94,10 @@ class ActionConfirm extends OriginalActionConfirm
     {
         global $app;
 
+        if (func_num_args() == 1) {
+            $app['bluora.slackapi']->accessToken(func_get_arg(0));
+        }
+
         return $app['bluora.slackapi']->send($this);
     }
 }

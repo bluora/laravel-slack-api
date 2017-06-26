@@ -22,17 +22,15 @@ class SlackApi
     /**
      * Set or get the access token.
      *
-     * @param string $token
-     *
      * @return Slack
      */
-    public function accessToken($token = false)
+    public function accessToken()
     {
-        if ($token === false) {
+        if (func_num_args() == 0) {
             return $this->getAccessToken();
         }
 
-        return $this->setAccessToken($token);
+        return $this->setAccessToken(func_get_arg(0));
     }
 
     /**
@@ -91,8 +89,8 @@ class SlackApi
     /**
      * Capture all calls.
      *
-     * @param  [type] $method_name
-     * @param  [type] $arguments
+     * @param string $method_name
+     * @param array  $arguments
      *
      * @return mixed
      */
