@@ -115,6 +115,22 @@ class SlackApi
     }
 
     /**
+     * Set or get if we're logging when response is not ok.
+     *
+     * @return self|bool
+     */
+    public function logNotOk()
+    {
+        if (func_num_args() == 0) {
+            return $this->client->getLogNotOk();
+        }
+
+        $this->client->setLogNotOk(func_get_arg(0));
+
+        return $this;
+    }
+
+    /**
      * Set the endpoint for the client.
      *
      * @param string $endpoint
