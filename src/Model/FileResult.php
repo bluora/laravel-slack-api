@@ -6,7 +6,6 @@ use CL\Slack\Model\FileResult as OriginalFileResult;
 
 class FileResult extends OriginalFileResult
 {
-
     /**
      * Set the endpoint.
      *

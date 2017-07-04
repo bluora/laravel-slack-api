@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsLeavePayloadResponse as OriginalGroupsLeavePayloadRes
 
 class GroupsLeavePayloadResponse extends OriginalGroupsLeavePayloadResponse
 {
-
 }

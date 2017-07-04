@@ -43,10 +43,9 @@ foreach (['Payload', 'Model'] as $class_type) {
         $class_contents = '';
 
         if (stripos($path, 'PayloadResponse') === false || $class_type == 'Model') {
-
             $current_class_contents = file_get_contents($working_path.'/'.$path);
 
-            $matches= [];
+            $matches = [];
             $methods = preg_match_all("/public function set(.*?)\(/im", $current_class_contents, $matches);
 
             foreach ($matches[1] as $method_name) {

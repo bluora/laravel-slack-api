@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImListPayload as OriginalImListPayload;
-use CL\Slack\Payload\ImListPayloadResponse;
 
 class ImListPayload extends OriginalImListPayload
 {
-
     /**
      * Get or set the exclude archived.
      *

@@ -6,5 +6,4 @@ use CL\Slack\Payload\SearchAllPayloadResponse as OriginalSearchAllPayloadRespons
 
 class SearchAllPayloadResponse extends OriginalSearchAllPayloadResponse
 {
-
 }

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\SearchMessagesPayload as OriginalSearchMessagesPayload;
-use CL\Slack\Payload\SearchMessagesPayloadResponse;
 
 class SearchMessagesPayload extends OriginalSearchMessagesPayload
 {
-
     /**
      * Set the endpoint.
      *

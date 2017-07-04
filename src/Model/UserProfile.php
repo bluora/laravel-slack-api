@@ -6,7 +6,6 @@ use CL\Slack\Model\UserProfile as OriginalUserProfile;
 
 class UserProfile extends OriginalUserProfile
 {
-
     /**
      * Set the endpoint.
      *

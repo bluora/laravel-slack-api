@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsInfoPayloadResponse as OriginalGroupsInfoPayloadRespo
 
 class GroupsInfoPayloadResponse extends OriginalGroupsInfoPayloadResponse
 {
-
 }

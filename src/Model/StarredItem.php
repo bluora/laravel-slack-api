@@ -6,7 +6,6 @@ use CL\Slack\Model\StarredItem as OriginalStarredItem;
 
 class StarredItem extends OriginalStarredItem
 {
-
     /**
      * Set the endpoint.
      *

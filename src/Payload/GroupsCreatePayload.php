@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsCreatePayload as OriginalGroupsCreatePayload;
-use CL\Slack\Payload\GroupsCreatePayloadResponse;
 
 class GroupsCreatePayload extends OriginalGroupsCreatePayload
 {
-
     /**
      * Get or set the name.
      *

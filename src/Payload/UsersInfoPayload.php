@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersInfoPayload as OriginalUsersInfoPayload;
-use CL\Slack\Payload\UsersInfoPayloadResponse;
 
 class UsersInfoPayload extends OriginalUsersInfoPayload
 {
-
     /**
      * Get or set the user id.
      *

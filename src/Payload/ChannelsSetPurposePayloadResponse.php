@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsSetPurposePayloadResponse as OriginalChannelsSetPur
 
 class ChannelsSetPurposePayloadResponse extends OriginalChannelsSetPurposePayloadResponse
 {
-
 }

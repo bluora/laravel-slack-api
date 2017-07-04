@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsListPayload as OriginalChannelsListPayload;
-use CL\Slack\Payload\ChannelsListPayloadResponse;
 
 class ChannelsListPayload extends OriginalChannelsListPayload
 {
-
     /**
      * Get or set the exclude archived.
      *

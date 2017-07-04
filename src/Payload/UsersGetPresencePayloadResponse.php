@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersGetPresencePayloadResponse as OriginalUsersGetPresence
 
 class UsersGetPresencePayloadResponse extends OriginalUsersGetPresencePayloadResponse
 {
-
 }

@@ -6,5 +6,4 @@ use CL\Slack\Payload\StarsListPayloadResponse as OriginalStarsListPayloadRespons
 
 class StarsListPayloadResponse extends OriginalStarsListPayloadResponse
 {
-
 }

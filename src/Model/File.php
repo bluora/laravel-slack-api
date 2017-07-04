@@ -6,7 +6,6 @@ use CL\Slack\Model\File as OriginalFile;
 
 class File extends OriginalFile
 {
-
     /**
      * Set the endpoint.
      *

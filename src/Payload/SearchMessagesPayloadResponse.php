@@ -6,5 +6,4 @@ use CL\Slack\Payload\SearchMessagesPayloadResponse as OriginalSearchMessagesPayl
 
 class SearchMessagesPayloadResponse extends OriginalSearchMessagesPayloadResponse
 {
-
 }

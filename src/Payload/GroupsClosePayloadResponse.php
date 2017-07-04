@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsClosePayloadResponse as OriginalGroupsClosePayloadRes
 
 class GroupsClosePayloadResponse extends OriginalGroupsClosePayloadResponse
 {
-
 }

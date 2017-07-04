@@ -6,7 +6,6 @@ use CL\Slack\Model\AttachmentAction as OriginalAttachmentAction;
 
 class AttachmentAction extends OriginalAttachmentAction
 {
-
     /**
      * Get or set the name.
      *

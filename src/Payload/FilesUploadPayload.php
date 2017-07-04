@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesUploadPayload as OriginalFilesUploadPayload;
-use CL\Slack\Payload\FilesUploadPayloadResponse;
 
 class FilesUploadPayload extends OriginalFilesUploadPayload
 {
-
     /**
      * Get or set the file.
      *

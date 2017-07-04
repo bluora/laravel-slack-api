@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChatPostMessagePayloadResponse as OriginalChatPostMessagePa
 
 class ChatPostMessagePayloadResponse extends OriginalChatPostMessagePayloadResponse
 {
-
 }

@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsRenamePayloadResponse as OriginalChannelsRenamePayl
 
 class ChannelsRenamePayloadResponse extends OriginalChannelsRenamePayloadResponse
 {
-
 }

@@ -6,5 +6,4 @@ use CL\Slack\Payload\OauthAccessPayloadResponse as OriginalOauthAccessPayloadRes
 
 class OauthAccessPayloadResponse extends OriginalOauthAccessPayloadResponse
 {
-
 }

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersListPayload as OriginalUsersListPayload;
-use CL\Slack\Payload\UsersListPayloadResponse;
 
 class UsersListPayload extends OriginalUsersListPayload
 {
-
     /**
      * Get or set the presence.
      *

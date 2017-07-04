@@ -6,7 +6,6 @@ use CL\Slack\Model\Customizable as OriginalCustomizable;
 
 class Customizable extends OriginalCustomizable
 {
-
     /**
      * Set the endpoint.
      *

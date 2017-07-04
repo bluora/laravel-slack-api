@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsJoinPayload as OriginalChannelsJoinPayload;
-use CL\Slack\Payload\ChannelsJoinPayloadResponse;
 
 class ChannelsJoinPayload extends OriginalChannelsJoinPayload
 {
-
     /**
      * Get or set the name.
      *

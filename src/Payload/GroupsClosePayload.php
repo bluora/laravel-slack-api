@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsClosePayload as OriginalGroupsClosePayload;
-use CL\Slack\Payload\GroupsClosePayloadResponse;
 
 class GroupsClosePayload extends OriginalGroupsClosePayload
 {
-
     /**
      * Get or set the group id.
      *

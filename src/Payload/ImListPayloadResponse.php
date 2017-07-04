@@ -6,5 +6,4 @@ use CL\Slack\Payload\ImListPayloadResponse as OriginalImListPayloadResponse;
 
 class ImListPayloadResponse extends OriginalImListPayloadResponse
 {
-
 }

@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsUnarchivePayloadResponse as OriginalChannelsUnarchi
 
 class ChannelsUnarchivePayloadResponse extends OriginalChannelsUnarchivePayloadResponse
 {
-
 }

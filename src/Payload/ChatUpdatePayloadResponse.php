@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChatUpdatePayloadResponse as OriginalChatUpdatePayloadRespo
 
 class ChatUpdatePayloadResponse extends OriginalChatUpdatePayloadResponse
 {
-
 }

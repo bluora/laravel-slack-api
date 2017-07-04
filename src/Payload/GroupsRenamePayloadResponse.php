@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsRenamePayloadResponse as OriginalGroupsRenamePayloadR
 
 class GroupsRenamePayloadResponse extends OriginalGroupsRenamePayloadResponse
 {
-
 }

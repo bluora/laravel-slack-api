@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersAdminInvitePayloadResponse as OriginalUsersAdminInvite
 
 class UsersAdminInvitePayloadResponse extends OriginalUsersAdminInvitePayloadResponse
 {
-
 }

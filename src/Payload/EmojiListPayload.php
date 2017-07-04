@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\EmojiListPayload as OriginalEmojiListPayload;
-use CL\Slack\Payload\EmojiListPayloadResponse;
 
 class EmojiListPayload extends OriginalEmojiListPayload
 {
-
     /**
      * Set the endpoint.
      *

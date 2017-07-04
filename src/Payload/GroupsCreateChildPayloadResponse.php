@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsCreateChildPayloadResponse as OriginalGroupsCreateChi
 
 class GroupsCreateChildPayloadResponse extends OriginalGroupsCreateChildPayloadResponse
 {
-
 }

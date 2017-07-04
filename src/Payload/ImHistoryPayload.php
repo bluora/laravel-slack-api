@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImHistoryPayload as OriginalImHistoryPayload;
-use CL\Slack\Payload\ImHistoryPayloadResponse;
 
 class ImHistoryPayload extends OriginalImHistoryPayload
 {
-
     /**
      * Get or set the im id.
      *

@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsInfoPayloadResponse as OriginalChannelsInfoPayloadR
 
 class ChannelsInfoPayloadResponse extends OriginalChannelsInfoPayloadResponse
 {
-
 }

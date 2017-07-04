@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsSetTopicPayloadResponse as OriginalGroupsSetTopicPayl
 
 class GroupsSetTopicPayloadResponse extends OriginalGroupsSetTopicPayloadResponse
 {
-
 }

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\RtmStartPayload as OriginalRtmStartPayload;
-use CL\Slack\Payload\RtmStartPayloadResponse;
 
 class RtmStartPayload extends OriginalRtmStartPayload
 {
-
     /**
      * Set the endpoint.
      *

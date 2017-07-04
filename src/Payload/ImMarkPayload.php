@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImMarkPayload as OriginalImMarkPayload;
-use CL\Slack\Payload\ImMarkPayloadResponse;
 
 class ImMarkPayload extends OriginalImMarkPayload
 {
-
     /**
      * Get or set the im id.
      *

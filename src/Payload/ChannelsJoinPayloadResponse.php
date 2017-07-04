@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsJoinPayloadResponse as OriginalChannelsJoinPayloadR
 
 class ChannelsJoinPayloadResponse extends OriginalChannelsJoinPayloadResponse
 {
-
 }
