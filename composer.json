@@ -1,5 +1,5 @@
 {
-    "name": "bluora/laravel-slack-api",
+    "name": "hnhdigital-os/laravel-slack-api",
     "description": "Laravel integration for the cleentfaar/slack package.",
     "keywords": ["slack", "laravel", "api"],
     "license": "MIT",
