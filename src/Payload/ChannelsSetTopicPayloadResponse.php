@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsSetTopicPayloadResponse as OriginalChannelsSetTopic
 
 class ChannelsSetTopicPayloadResponse extends OriginalChannelsSetTopicPayloadResponse
 {
-
 }

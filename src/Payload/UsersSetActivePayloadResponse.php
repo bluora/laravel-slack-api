@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersSetActivePayloadResponse as OriginalUsersSetActivePayl
 
 class UsersSetActivePayloadResponse extends OriginalUsersSetActivePayloadResponse
 {
-
 }

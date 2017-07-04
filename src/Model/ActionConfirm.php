@@ -6,7 +6,6 @@ use CL\Slack\Model\ActionConfirm as OriginalActionConfirm;
 
 class ActionConfirm extends OriginalActionConfirm
 {
-
     /**
      * Get or set the title.
      *

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ImClosePayload as OriginalImClosePayload;
-use CL\Slack\Payload\ImClosePayloadResponse;
 
 class ImClosePayload extends OriginalImClosePayload
 {
-
     /**
      * Get or set the im id.
      *

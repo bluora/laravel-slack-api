@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\OauthAccessPayload as OriginalOauthAccessPayload;
-use CL\Slack\Payload\OauthAccessPayloadResponse;
 
 class OauthAccessPayload extends OriginalOauthAccessPayload
 {
-
     /**
      * Get or set the client id.
      *

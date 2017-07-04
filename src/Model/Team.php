@@ -6,7 +6,6 @@ use CL\Slack\Model\Team as OriginalTeam;
 
 class Team extends OriginalTeam
 {
-
     /**
      * Set the endpoint.
      *

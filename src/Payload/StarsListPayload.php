@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\StarsListPayload as OriginalStarsListPayload;
-use CL\Slack\Payload\StarsListPayloadResponse;
 
 class StarsListPayload extends OriginalStarsListPayload
 {
-
     /**
      * Get or set the user id.
      *

@@ -6,7 +6,6 @@ use CL\Slack\Model\User as OriginalUser;
 
 class User extends OriginalUser
 {
-
     /**
      * Set the endpoint.
      *

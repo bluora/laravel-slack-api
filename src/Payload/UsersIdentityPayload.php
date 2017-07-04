@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersIdentityPayload as OriginalUsersIdentityPayload;
-use CL\Slack\Payload\UsersIdentityPayloadResponse;
 
 class UsersIdentityPayload extends OriginalUsersIdentityPayload
 {
-
     /**
      * Get or set the token.
      *

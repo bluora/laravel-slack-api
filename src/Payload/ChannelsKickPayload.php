@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsKickPayload as OriginalChannelsKickPayload;
-use CL\Slack\Payload\ChannelsKickPayloadResponse;
 
 class ChannelsKickPayload extends OriginalChannelsKickPayload
 {
-
     /**
      * Get or set the channel id.
      *

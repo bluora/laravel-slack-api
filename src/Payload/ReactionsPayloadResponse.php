@@ -6,5 +6,4 @@ use CL\Slack\Payload\ReactionsPayloadResponse as OriginalReactionsPayloadRespons
 
 class ReactionsPayloadResponse extends OriginalReactionsPayloadResponse
 {
-
 }

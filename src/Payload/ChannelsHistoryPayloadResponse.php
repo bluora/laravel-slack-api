@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsHistoryPayloadResponse as OriginalChannelsHistoryPa
 
 class ChannelsHistoryPayloadResponse extends OriginalChannelsHistoryPayloadResponse
 {
-
 }

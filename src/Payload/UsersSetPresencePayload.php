@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersSetPresencePayload as OriginalUsersSetPresencePayload;
-use CL\Slack\Payload\UsersSetPresencePayloadResponse;
 
 class UsersSetPresencePayload extends OriginalUsersSetPresencePayload
 {
-
     /**
      * Get or set the presence.
      *

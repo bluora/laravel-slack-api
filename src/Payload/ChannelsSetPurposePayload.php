@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsSetPurposePayload as OriginalChannelsSetPurposePayload;
-use CL\Slack\Payload\ChannelsSetPurposePayloadResponse;
 
 class ChannelsSetPurposePayload extends OriginalChannelsSetPurposePayload
 {
-
     /**
      * Get or set the channel id.
      *

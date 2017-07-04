@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsHistoryPayload as OriginalGroupsHistoryPayload;
-use CL\Slack\Payload\GroupsHistoryPayloadResponse;
 
 class GroupsHistoryPayload extends OriginalGroupsHistoryPayload
 {
-
     /**
      * Get or set the group id.
      *

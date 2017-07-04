@@ -6,5 +6,4 @@ use CL\Slack\Payload\ImHistoryPayloadResponse as OriginalImHistoryPayloadRespons
 
 class ImHistoryPayloadResponse extends OriginalImHistoryPayloadResponse
 {
-
 }

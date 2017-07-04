@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersAdminInvitePayload as OriginalUsersAdminInvitePayload;
-use CL\Slack\Payload\UsersAdminInvitePayloadResponse;
 
 class UsersAdminInvitePayload extends OriginalUsersAdminInvitePayload
 {
-
     /**
      * Get or set the email.
      *

@@ -60,7 +60,7 @@ class SlackApi
 
     /**
      * Add request closure.
-     * 
+     *
      * @param Closure $closure
      *
      * @return void
@@ -73,8 +73,8 @@ class SlackApi
     }
 
     /**
-     * Add response closure
-     * 
+     * Add response closure.
+     *
      * @param Closure $closure
      *
      * @return void
@@ -105,7 +105,8 @@ class SlackApi
 
             if (class_exists($class_name)) {
                 $this->client->resetEndpoint();
-                return (new $class_name());
+
+                return new $class_name();
             }
         }
 

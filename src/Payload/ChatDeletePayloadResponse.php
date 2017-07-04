@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChatDeletePayloadResponse as OriginalChatDeletePayloadRespo
 
 class ChatDeletePayloadResponse extends OriginalChatDeletePayloadResponse
 {
-
 }

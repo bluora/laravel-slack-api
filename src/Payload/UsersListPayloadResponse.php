@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersListPayloadResponse as OriginalUsersListPayloadRespons
 
 class UsersListPayloadResponse extends OriginalUsersListPayloadResponse
 {
-
 }

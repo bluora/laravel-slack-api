@@ -6,7 +6,6 @@ use CL\Slack\Model\AttachmentField as OriginalAttachmentField;
 
 class AttachmentField extends OriginalAttachmentField
 {
-
     /**
      * Get or set the title.
      *

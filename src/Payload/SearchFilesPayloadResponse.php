@@ -6,5 +6,4 @@ use CL\Slack\Payload\SearchFilesPayloadResponse as OriginalSearchFilesPayloadRes
 
 class SearchFilesPayloadResponse extends OriginalSearchFilesPayloadResponse
 {
-
 }

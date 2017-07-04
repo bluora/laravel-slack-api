@@ -6,5 +6,4 @@ use CL\Slack\Payload\FilesInfoPayloadResponse as OriginalFilesInfoPayloadRespons
 
 class FilesInfoPayloadResponse extends OriginalFilesInfoPayloadResponse
 {
-
 }

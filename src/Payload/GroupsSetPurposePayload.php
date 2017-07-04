@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsSetPurposePayload as OriginalGroupsSetPurposePayload;
-use CL\Slack\Payload\GroupsSetPurposePayloadResponse;
 
 class GroupsSetPurposePayload extends OriginalGroupsSetPurposePayload
 {
-
     /**
      * Get or set the group id.
      *

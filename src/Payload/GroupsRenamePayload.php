@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsRenamePayload as OriginalGroupsRenamePayload;
-use CL\Slack\Payload\GroupsRenamePayloadResponse;
 
 class GroupsRenamePayload extends OriginalGroupsRenamePayload
 {
-
     /**
      * Get or set the group id.
      *

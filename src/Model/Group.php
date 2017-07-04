@@ -6,7 +6,6 @@ use CL\Slack\Model\Group as OriginalGroup;
 
 class Group extends OriginalGroup
 {
-
     /**
      * Set the endpoint.
      *

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesListPayload as OriginalFilesListPayload;
-use CL\Slack\Payload\FilesListPayloadResponse;
 
 class FilesListPayload extends OriginalFilesListPayload
 {
-
     /**
      * Get or set the user id.
      *

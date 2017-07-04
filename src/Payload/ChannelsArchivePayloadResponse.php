@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsArchivePayloadResponse as OriginalChannelsArchivePa
 
 class ChannelsArchivePayloadResponse extends OriginalChannelsArchivePayloadResponse
 {
-
 }

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatPostMessagePayload as OriginalChatPostMessagePayload;
-use CL\Slack\Payload\ChatPostMessagePayloadResponse;
 
 class ChatPostMessagePayload extends OriginalChatPostMessagePayload
 {
-
     /**
      * Get or set the channel.
      *

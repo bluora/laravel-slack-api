@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsUnarchivePayload as OriginalChannelsUnarchivePayload;
-use CL\Slack\Payload\ChannelsUnarchivePayloadResponse;
 
 class ChannelsUnarchivePayload extends OriginalChannelsUnarchivePayload
 {
-
     /**
      * Get or set the channel id.
      *

@@ -6,7 +6,6 @@ use CL\Slack\Model\Message as OriginalMessage;
 
 class Message extends OriginalMessage
 {
-
     /**
      * Set the endpoint.
      *

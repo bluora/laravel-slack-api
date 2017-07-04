@@ -6,5 +6,4 @@ use CL\Slack\Payload\EmojiListPayloadResponse as OriginalEmojiListPayloadRespons
 
 class EmojiListPayloadResponse extends OriginalEmojiListPayloadResponse
 {
-
 }

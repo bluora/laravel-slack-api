@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsKickPayloadResponse as OriginalChannelsKickPayloadR
 
 class ChannelsKickPayloadResponse extends OriginalChannelsKickPayloadResponse
 {
-
 }

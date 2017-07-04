@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsHistoryPayloadResponse as OriginalGroupsHistoryPayloa
 
 class GroupsHistoryPayloadResponse extends OriginalGroupsHistoryPayloadResponse
 {
-
 }

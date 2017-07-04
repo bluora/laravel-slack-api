@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsHistoryPayload as OriginalChannelsHistoryPayload;
-use CL\Slack\Payload\ChannelsHistoryPayloadResponse;
 
 class ChannelsHistoryPayload extends OriginalChannelsHistoryPayload
 {
-
     /**
      * Get or set the channel id.
      *

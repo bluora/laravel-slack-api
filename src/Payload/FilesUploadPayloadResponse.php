@@ -6,5 +6,4 @@ use CL\Slack\Payload\FilesUploadPayloadResponse as OriginalFilesUploadPayloadRes
 
 class FilesUploadPayloadResponse extends OriginalFilesUploadPayloadResponse
 {
-
 }

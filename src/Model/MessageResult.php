@@ -6,7 +6,6 @@ use CL\Slack\Model\MessageResult as OriginalMessageResult;
 
 class MessageResult extends OriginalMessageResult
 {
-
     /**
      * Set the endpoint.
      *

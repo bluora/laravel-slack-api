@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\UsersSetActivePayload as OriginalUsersSetActivePayload;
-use CL\Slack\Payload\UsersSetActivePayloadResponse;
 
 class UsersSetActivePayload extends OriginalUsersSetActivePayload
 {
-
     /**
      * Set the endpoint.
      *

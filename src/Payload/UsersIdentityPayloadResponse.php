@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersIdentityPayloadResponse as OriginalUsersIdentityPayloa
 
 class UsersIdentityPayloadResponse extends OriginalUsersIdentityPayloadResponse
 {
-
 }

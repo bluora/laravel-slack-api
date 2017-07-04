@@ -6,7 +6,6 @@ use CL\Slack\Model\GroupWithState as OriginalGroupWithState;
 
 class GroupWithState extends OriginalGroupWithState
 {
-
     /**
      * Set the endpoint.
      *

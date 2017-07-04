@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsInvitePayloadResponse as OriginalGroupsInvitePayloadR
 
 class GroupsInvitePayloadResponse extends OriginalGroupsInvitePayloadResponse
 {
-
 }

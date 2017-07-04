@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsLeavePayload as OriginalGroupsLeavePayload;
-use CL\Slack\Payload\GroupsLeavePayloadResponse;
 
 class GroupsLeavePayload extends OriginalGroupsLeavePayload
 {
-
     /**
      * Get or set the group id.
      *

@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsInvitePayloadResponse as OriginalChannelsInvitePayl
 
 class ChannelsInvitePayloadResponse extends OriginalChannelsInvitePayloadResponse
 {
-
 }

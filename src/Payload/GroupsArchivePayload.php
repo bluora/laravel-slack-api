@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\GroupsArchivePayload as OriginalGroupsArchivePayload;
-use CL\Slack\Payload\GroupsArchivePayloadResponse;
 
 class GroupsArchivePayload extends OriginalGroupsArchivePayload
 {
-
     /**
      * Get or set the group id.
      *

@@ -6,7 +6,6 @@ use CL\Slack\Model\SimpleChannel as OriginalSimpleChannel;
 
 class SimpleChannel extends OriginalSimpleChannel
 {
-
     /**
      * Set the endpoint.
      *

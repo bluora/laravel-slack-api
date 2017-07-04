@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatDeletePayload as OriginalChatDeletePayload;
-use CL\Slack\Payload\ChatDeletePayloadResponse;
 
 class ChatDeletePayload extends OriginalChatDeletePayload
 {
-
     /**
      * Get or set the channel id.
      *

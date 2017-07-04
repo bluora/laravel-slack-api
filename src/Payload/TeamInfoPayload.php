@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\TeamInfoPayload as OriginalTeamInfoPayload;
-use CL\Slack\Payload\TeamInfoPayloadResponse;
 
 class TeamInfoPayload extends OriginalTeamInfoPayload
 {
-
     /**
      * Set the endpoint.
      *

@@ -6,7 +6,6 @@ use CL\Slack\Model\Paging as OriginalPaging;
 
 class Paging extends OriginalPaging
 {
-
     /**
      * Set the endpoint.
      *

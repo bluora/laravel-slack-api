@@ -6,5 +6,4 @@ use CL\Slack\Payload\GroupsUnarchivePayloadResponse as OriginalGroupsUnarchivePa
 
 class GroupsUnarchivePayloadResponse extends OriginalGroupsUnarchivePayloadResponse
 {
-
 }

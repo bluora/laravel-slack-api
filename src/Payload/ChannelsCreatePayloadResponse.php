@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsCreatePayloadResponse as OriginalChannelsCreatePayl
 
 class ChannelsCreatePayloadResponse extends OriginalChannelsCreatePayloadResponse
 {
-
 }

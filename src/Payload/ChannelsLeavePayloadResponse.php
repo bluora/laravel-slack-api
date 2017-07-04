@@ -6,5 +6,4 @@ use CL\Slack\Payload\ChannelsLeavePayloadResponse as OriginalChannelsLeavePayloa
 
 class ChannelsLeavePayloadResponse extends OriginalChannelsLeavePayloadResponse
 {
-
 }

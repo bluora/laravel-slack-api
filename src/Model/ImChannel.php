@@ -6,7 +6,6 @@ use CL\Slack\Model\ImChannel as OriginalImChannel;
 
 class ImChannel extends OriginalImChannel
 {
-
     /**
      * Set the endpoint.
      *

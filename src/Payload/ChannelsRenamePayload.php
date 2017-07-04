@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChannelsRenamePayload as OriginalChannelsRenamePayload;
-use CL\Slack\Payload\ChannelsRenamePayloadResponse;
 
 class ChannelsRenamePayload extends OriginalChannelsRenamePayload
 {
-
     /**
      * Get or set the channel id.
      *

@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\FilesInfoPayload as OriginalFilesInfoPayload;
-use CL\Slack\Payload\FilesInfoPayloadResponse;
 
 class FilesInfoPayload extends OriginalFilesInfoPayload
 {
-
     /**
      * Get or set the count.
      *

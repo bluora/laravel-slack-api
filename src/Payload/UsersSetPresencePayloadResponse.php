@@ -6,5 +6,4 @@ use CL\Slack\Payload\UsersSetPresencePayloadResponse as OriginalUsersSetPresence
 
 class UsersSetPresencePayloadResponse extends OriginalUsersSetPresencePayloadResponse
 {
-
 }

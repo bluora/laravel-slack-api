@@ -3,11 +3,9 @@
 namespace Bluora\LaravelSlackApi\Payload;
 
 use CL\Slack\Payload\ChatUpdatePayload as OriginalChatUpdatePayload;
-use CL\Slack\Payload\ChatUpdatePayloadResponse;
 
 class ChatUpdatePayload extends OriginalChatUpdatePayload
 {
-
     /**
      * Get or set the ts.
      *
