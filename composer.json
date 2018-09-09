@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "hnhdigital-os/php-slack-api": "0.20.17"
+        "hnhdigital-os/php-slack-api": "0.20.18"
     },
     "require-dev": {
         "phpmd/phpmd" : "@stable",
